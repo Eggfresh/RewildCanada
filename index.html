@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,16 +80,17 @@
   .stat-bar{background:var(--deep-green);display:grid;grid-template-columns:repeat(4,1fr)}
   .stat-item{padding:2.5rem 2rem;border-right:1px solid rgba(255,255,255,.1);text-align:center}
   .stat-item:last-child{border-right:none}
-  .stat-num{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;color:var(--lichen);line-height:1;display:block}
-  .stat-label{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.65);margin-top:.5rem;display:block}
+  .stat-num{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;color:#fff;line-height:1;display:block}
+  .stat-label{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:#fff;margin-top:.5rem;display:block}
 
   /* SECTIONS */
   .section{display:none;padding:6rem 6vw;min-height:80vh}
   .section.active{display:block}
-  .section-header{display:grid;grid-template-columns:auto 1fr;align-items:end;gap:2rem;margin-bottom:4rem;padding-bottom:2rem;border-bottom:1px solid var(--sand)}
-  .section-number{font-size:3.2rem;line-height:1;opacity:.85;filter:drop-shadow(0 2px 6px rgba(0,0,0,.08))}
+  .title-emoji{font-size:.75em;margin-right:.35em;vertical-align:.05em;line-height:1}
+  .section-header{margin-bottom:3rem;padding-bottom:2rem;border-bottom:1px solid var(--sand)}
+  .section-number{display:none}
   .section-title-block h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:700;color:var(--charcoal);line-height:1.1}
-  .section-title-block p{margin-top:.75rem;color:#666;font-size:1rem;font-weight:300;max-width:600px;line-height:1.7}
+  .section-title-block p{margin-top:.75rem;color:#666;font-size:1rem;font-weight:300;max-width:640px;line-height:1.7}
 
   /* MISSION CARDS */
   .mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:4rem}
@@ -114,10 +116,10 @@
   .pull-quote{background:var(--sage);color:var(--cream);padding:4rem 5rem;position:relative;overflow:hidden;margin:3rem 0}
   .pull-quote::before{content:'"';font-family:'Playfair Display',serif;font-size:20rem;color:rgba(255,255,255,.04);position:absolute;top:-4rem;left:1rem;line-height:1}
   .pull-quote p{font-family:'Playfair Display',serif;font-size:clamp(1.3rem,2.5vw,2rem);font-style:italic;line-height:1.5;position:relative;z-index:1;max-width:700px}
-  .pull-quote cite{display:block;margin-top:1.5rem;font-family:'DM Mono',monospace;font-size:.75rem;letter-spacing:.15em;color:var(--lichen);font-style:normal}
+  .pull-quote cite{display:block;margin-top:1.5rem;font-family:'DM Mono',monospace;font-size:.75rem;letter-spacing:.15em;color:#fff;font-style:normal}
 
   /* LAND ACK */
-  .land-ack{background:#f0ece3;border-left:4px solid #9b6940;padding:2rem 2.5rem;margin:3rem 0;max-width:700px}
+  .land-ack{background:#f0ece3;border-left:4px solid #9b6940;padding:2rem 2.5rem}
   .land-ack h4{font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--bark);margin-bottom:.75rem}
   .land-ack p{font-size:.9rem;color:#555;line-height:1.8;font-weight:300;font-style:italic}
 
@@ -225,12 +227,32 @@
   .province-desc{font-size:.78rem;color:#666;line-height:1.6;font-weight:300}
 
   /* VISION BLOCK */
-  .vision-block{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin:3rem 0;align-items:center}
-  .vision-text h3{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;margin-bottom:1rem;line-height:1.2}
-  .vision-text p{font-size:.95rem;color:#555;line-height:1.8;font-weight:300;margin-bottom:1rem}
+  /* ── ABOUT SECTION GRID ── */
+  .about-grid{
+    display:grid;
+    grid-template-columns:1fr 1.5fr;
+    grid-template-rows:auto auto;
+    column-gap:5rem;
+    row-gap:3rem;
+    margin-bottom:4rem;
+    padding-bottom:4rem;
+    border-bottom:1px solid var(--sand)
+  }
+  .about-title-col{grid-column:1;grid-row:1;align-self:start}
+  .about-vision-col{grid-column:2;grid-row:1;align-self:start}
+  .about-ack-col{grid-column:1;grid-row:2;align-self:stretch}
+  .about-stats-col{grid-column:2;grid-row:2;align-self:start}
+
+  .about-eyebrow{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--bark);margin-bottom:1rem;opacity:.9}
+  .about-h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--charcoal);line-height:1.05;margin-bottom:1rem}
+  .about-tagline{font-size:.93rem;color:#666;line-height:1.75;font-weight:300;max-width:340px}
+  .about-vision-h3{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--charcoal);line-height:1.2;margin-bottom:1rem}
+  .about-vision-h3 em{font-style:italic;color:var(--sage)}
+  .about-vision-col p{font-size:.93rem;color:#555;line-height:1.85;font-weight:300;margin-bottom:.8rem}
+  .about-ack-col .land-ack{height:100%;box-sizing:border-box;margin:0;max-width:none}
   .vision-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
   .vision-stat{background:var(--forest);color:var(--cream);padding:1.5rem;text-align:center}
-  .vision-stat-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--lichen);display:block}
+  .vision-stat-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:#fff;display:block}
   .vision-stat-label{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.65);margin-top:.3rem;display:block}
 
   /* DIRECTORS */
@@ -290,6 +312,10 @@
   /* RESPONSIVE */
   @media(max-width:900px){
     .province-strip{grid-template-columns:1fr 1fr}
+    .about-grid{grid-template-columns:1fr;row-gap:2rem}
+    .about-title-col,.about-vision-col,.about-ack-col,.about-stats-col{grid-column:1}
+    .about-title-col{grid-row:1}.about-vision-col{grid-row:2}.about-ack-col{grid-row:3}.about-stats-col{grid-row:4}
+    .about-tagline{max-width:none}
     .directors-grid{grid-template-columns:1fr}
     .vision-block{grid-template-columns:1fr}
     .rewild-principles{grid-template-columns:1fr}
@@ -392,41 +418,48 @@
 
 <!-- ══ ABOUT ══ -->
 <section id="mission" class="section active">
-  <div class="section-header">
-    <div class="section-number">🌿</div>
-    <div class="section-title-block">
-      <h2>Giving the Land<br>Back to Itself</h2>
-      <p>Rewilding Canada is an initiative aimed at restoring Canada's wild landscapes — one property, one watershed, one community at a time. We believe that the most powerful conservation act is often simply to step back and let nature lead.</p>
-    </div>
-  </div>
+  <div class="about-grid">
 
-  <div class="vision-block">
-    <div class="vision-text">
-      <h3>A National Vision, <em style="font-style:italic;color:var(--moss)">Starting Here</em></h3>
+    <!-- TOP-LEFT: main title -->
+    <div class="about-title-col">
+      <h2 class="about-h2">🌿 Giving the Land<br>Back to Itself</h2>
+      <p class="about-tagline">Rewilding Canada restores wild landscapes one property at a time — removing fences, reviving streams, and letting nature lead.</p>
+    </div>
+
+    <!-- TOP-RIGHT: national vision -->
+    <div class="about-vision-col">
+      <h3 class="about-vision-h3">A National Vision, <em>Starting Here</em></h3>
       <p>Canada holds roughly 20% of the world's freshwater, nearly a quarter of its boreal forest, and some of the last intact temperate rainforest on earth. Yet decades of agricultural intensification, resource extraction, and urban sprawl have fragmented much of what remains. Rewilding Canada aims to change the relationship between landowners and the land beneath their feet.</p>
       <p>We are starting with two private properties in Ravenna, Ontario — and we aim to grow. Our aspiration is to connect landowners, scientists, and communities across provinces around a shared understanding: healthy land is not idle land. It is the most productive thing any of us can steward.</p>
       <p>Less management. More trust. Longer thinking. These are the principles guiding everything we do.</p>
     </div>
-    <div class="vision-stat-grid">
-      <div class="vision-stat"><span class="vision-stat-num">9.98M</span><span class="vision-stat-label">km² of Canada — one of the world's last great wild places</span></div>
-      <div class="vision-stat"><span class="vision-stat-num">~50%</span><span class="vision-stat-label">of Canada's native grasslands have been lost since settlement</span></div>
-      <div class="vision-stat"><span class="vision-stat-num">70%</span><span class="vision-stat-label">of boreal songbird species depend on intact forest corridors</span></div>
-      <div class="vision-stat"><span class="vision-stat-num">20%</span><span class="vision-stat-label">of Earth's freshwater flows through Canadian watersheds</span></div>
+
+    <!-- BOTTOM-LEFT: land acknowledgment — aligned under title -->
+    <div class="about-ack-col">
+      <div class="land-ack">
+        <h4>Land Acknowledgment</h4>
+        <p>The lands we work on, and the lands we aspire to restore across Canada, are the ancestral territories of Indigenous peoples who have stewarded these ecosystems for thousands of years. We are guests here. Our work is informed by — and should always remain accountable to — Indigenous knowledge, leadership, and sovereignty over these landscapes.</p>
+      </div>
     </div>
+
+    <!-- BOTTOM-RIGHT: stat tiles — aligned under vision text -->
+    <div class="about-stats-col">
+      <div class="vision-stat-grid">
+        <div class="vision-stat"><span class="vision-stat-num">9.98M</span><span class="vision-stat-label">km² of Canada — one of the world's last great wild places</span></div>
+        <div class="vision-stat"><span class="vision-stat-num">~50%</span><span class="vision-stat-label">of Canada's native grasslands have been lost since settlement</span></div>
+        <div class="vision-stat"><span class="vision-stat-num">70%</span><span class="vision-stat-label">of boreal songbird species depend on intact forest corridors</span></div>
+        <div class="vision-stat"><span class="vision-stat-num">20%</span><span class="vision-stat-label">of Earth's freshwater flows through Canadian watersheds</span></div>
+      </div>
+    </div>
+
   </div>
 
-  <div class="land-ack">
-    <h4>Land Acknowledgment</h4>
-    <p>The lands we work on, and the lands we aspire to restore across Canada, are the ancestral territories of Indigenous peoples who have stewarded these ecosystems for thousands of years. We are guests here. Our work is informed by — and should always remain accountable to — Indigenous knowledge, leadership, and sovereignty over these landscapes.</p>
-  </div>
-
-  <div class="section-header" style="margin-top:4rem;margin-bottom:2rem;">
+    <div class="section-header" style="margin-top:4rem;margin-bottom:2rem;">
     <div class="section-number">🗺</div>
     <div class="section-title-block">
-      <h2>Rewilding Across Canada</h2>
+      <h2><span class="title-emoji">🗺</span>Rewilding Across Canada</h2>
       <p>Every Canadian province holds a distinct ecological story — and a distinct set of pressures. We aim to work across these differences, not despite them.</p>
-    </div>
-  </div>
+    
 
   <div class="province-strip">
     <div class="province-card">
@@ -457,17 +490,16 @@
   </div>
 
   <div class="pull-quote">
-    <p>The goal isn't to return to a specific point in the past. It's to restore the processes — the fire, the flood, the predator, the seed — that allow the land to find its own complexity again.</p>
+    <p style="color: black">The goal isn't to return to a specific point in the past. It's to restore the processes — the fire, the flood, the predator, the seed — that allow the land to find its own complexity again.</p>
     <cite>— Rewilding Canada · Ravenna, Ontario</cite>
   </div>
 
   <div class="section-header" style="margin-top:4rem;margin-bottom:2rem;">
     <div class="section-number">👥</div>
     <div class="section-title-block">
-      <h2>Board of Directors</h2>
+      <h2><span class="title-emoji">👥</span>Board of Directors</h2>
       <p>Rewilding Canada is guided by people who believe that land stewardship and scientific rigour are not in opposition — they are the same thing.</p>
-    </div>
-  </div>
+    
 
   <div class="directors-grid">
     <div class="director-card">
@@ -520,7 +552,7 @@
   <div class="rewild-hero-split">
     <div class="rewild-hero-left">
       <div class="section-number" style="margin-bottom:1rem">🌍</div>
-      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,3rem);font-weight:900;color:var(--charcoal);line-height:1.05;margin-bottom:1.2rem">What is<br>Rewilding?</h2>
+      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,3rem);font-weight:900;color:var(--charcoal);line-height:1.05;margin-bottom:1.2rem">🌎 What is<br>Rewilding?</h2>
       <p style="font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--bark);border-top:2px solid var(--bark);padding-top:.8rem;line-height:1.6">Restoring Process,<br>Not Just Place</p>
     </div>
     <div class="rewild-hero-right">
@@ -602,10 +634,9 @@
   <div class="section-header">
     <div class="section-number">🦌</div>
     <div class="section-title-block">
-      <h2>Wildlife Observed<br>on the Properties</h2>
+      <h2><span class="title-emoji">🦌</span>Wildlife Observed<br>on the Properties</h2>
       <p>Species confirmed on or directly adjacent to the two Ravenna properties — documented by trail camera, field observation, and iNaturalist. This list grows as we spend more time looking.</p>
-    </div>
-  </div>
+    
 
   <div class="filter-bar">
     <button class="filter-btn active" onclick="filterSpecies('all',this)">All</button>
@@ -784,10 +815,9 @@
   <div class="section-header">
     <div class="section-number">🌳</div>
     <div class="section-title-block">
-      <h2>Plants on the<br>Properties</h2>
+      <h2><span class="title-emoji">🌳</span>Plants on the<br>Properties</h2>
       <p>Native trees, shrubs, wildflowers, and ferns documented on or planted across the two Ravenna properties. Invasive species are flagged — removal is ongoing every season.</p>
-    </div>
-  </div>
+    
 
   <div class="filter-bar">
     <button class="filter-btn active" onclick="filterSpecies('all',this)">All</button>
@@ -955,10 +985,9 @@
   <div class="section-header">
     <div class="section-number">🛠</div>
     <div class="section-title-block">
-      <h2>On the Ground</h2>
+      <h2><span class="title-emoji">🛠</span>On the Ground</h2>
       <p>Active restoration work across two properties near Ravenna, Ontario. Each property has its own character, its own pressures, and its own set of projects — but both are part of the same long-term vision.</p>
-    </div>
-  </div>
+    
 
   <!-- MAXWELL PROPERTY -->
   <div class="project-group open" id="group-maxwell">
@@ -1127,10 +1156,9 @@
   <div class="section-header">
     <div class="section-number">📷</div>
     <div class="section-title-block">
-      <h2>From the Properties</h2>
+      <h2><span class="title-emoji">📷</span>From the Properties</h2>
       <p>Photos from the two Ravenna properties — seasonal change, project progress, and species sightings. Replace the placeholders with your own images.</p>
-    </div>
-  </div>
+    
 
   <p class="gallery-intro">Drop your own photos into the placeholder cells below — trail camera captures, project progress, species documentation. Each cell holds one image with a label.</p>
 
@@ -1152,10 +1180,9 @@
   <div class="section-header">
     <div class="section-number">✉️</div>
     <div class="section-title-block">
-      <h2>Connect</h2>
+      <h2><span class="title-emoji">✉️</span>Connect</h2>
       <p>This is a private project, but one we're happy to share. If you're doing similar work nearby, have local species knowledge, or just want to talk about what's possible on your own land — reach out.</p>
-    </div>
-  </div>
+    
 
   <div class="involve-grid">
     <div class="involve-card">

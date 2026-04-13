@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +31,7 @@
 
 
   /* MISSION HERO */
-  .mission-hero{background:var(--deep-green);padding:5rem 8vw 5.5rem;margin:-4rem -8vw 4rem;text-align:center}
+  .mission-hero{background:var(--deep-green);padding:5rem 8vw 5.5rem;margin:-6rem -6vw 4rem;text-align:center}
   .mission-hero-inner{max-width:780px;margin:0 auto}
   .mission-hero-label{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--lichen);margin-bottom:1.5rem}
   .mission-hero-h2{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5vw,4rem);font-weight:900;color:#fff;line-height:1.05;margin-bottom:1.5rem}
@@ -43,18 +42,18 @@
   .rewild-global-inner{display:grid;grid-template-columns:1.2fr 1fr;gap:4rem;align-items:start}
   .global-eyebrow{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--lichen);margin-bottom:.8rem}
   .global-h3{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:#fff;line-height:1.15;margin-bottom:1rem}
-  .rewild-global-text p{font-size:.9rem;color:rgba(255,255,255,.75);line-height:1.8;font-weight:300;margin-bottom:.8rem}
+  .rewild-global-text p{font-size:.95rem;color:rgba(255,255,255,.92);line-height:1.85;font-weight:300;margin-bottom:.85rem}
   .rewild-global-text em{font-style:italic;color:var(--lichen)}
   .global-link{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.2rem;font-family:'DM Mono',monospace;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--lichen);text-decoration:none;border-bottom:1px solid rgba(143,168,130,.4);padding-bottom:.2rem;transition:color .2s,border-color .2s}
   .global-link:hover{color:#fff;border-color:rgba(255,255,255,.5)}
   .rewild-global-quote{border-left:2px solid rgba(143,168,130,.35);padding-left:2rem}
   .global-quote-mark{font-family:'Playfair Display',serif;font-size:5rem;line-height:.7;color:rgba(143,168,130,.4);margin-bottom:.5rem;font-weight:900}
-  .rewild-global-quote blockquote{font-family:'Playfair Display',serif;font-size:1rem;font-style:italic;color:rgba(255,255,255,.8);line-height:1.7;margin-bottom:1rem}
-  .rewild-global-quote cite{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(143,168,130,.7)}
+  .rewild-global-quote blockquote{font-family:'Playfair Display',serif;font-size:1rem;font-style:italic;color:#fff;line-height:1.75;margin-bottom:1rem}
+  .rewild-global-quote cite{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(210,240,210,.88)}
   .global-stats{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.8rem}
   .global-stat{border-top:1px solid rgba(143,168,130,.25);padding-top:1rem}
-  .gs-num{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;color:var(--lichen);display:block;line-height:1}
-  .gs-label{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);display:block;margin-top:.3rem;line-height:1.4}
+  .gs-num{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;color:#b8e8b0;display:block;line-height:1}
+  .gs-label{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.78);display:block;margin-top:.3rem;line-height:1.4}
 
   /* HERO SLIDESHOW - full viewport */
   .hero{position:relative;height:100vh;min-height:600px;overflow:hidden;background:var(--deep-green)}
@@ -81,10 +80,6 @@
   .slide-cta-btn.secondary{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5)}
   .slide-cta-btn.secondary:hover{border-color:#fff;background:rgba(255,255,255,.12)}
   /* bottom controls */
-  .slide-controls{position:absolute;bottom:2.2rem;left:50%;transform:translateX(-50%);z-index:10;display:flex;align-items:center;gap:.9rem}
-  .slide-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3);cursor:pointer;transition:all .3s;border:1.5px solid rgba(255,255,255,.45)}
-  .slide-dot.active{background:var(--lichen);border-color:var(--lichen);transform:scale(1.3)}
-  .slide-prev,.slide-next{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);color:#fff;width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:all .2s;line-height:1;font-family:sans-serif}
   .slide-prev:hover,.slide-next:hover{background:rgba(255,255,255,.28)}
   /* stat pills - bottom right */
   .hero-stats{position:absolute;bottom:2rem;right:4vw;z-index:10;display:flex;gap:.5rem}
@@ -102,7 +97,7 @@
   .nav-logo-img{height:42px;width:auto;display:block;filter:drop-shadow(0 1px 4px rgba(0,0,0,.3))}
   .nav-tabs{display:flex;list-style:none;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
   .nav-tabs::-webkit-scrollbar{display:none}
-  .nav-tabs li a{display:block;padding:0 1.1rem;height:62px;line-height:62px;font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sand);text-decoration:none;border-bottom:3px solid transparent;transition:all .2s;white-space:nowrap}
+  .nav-tabs li a{display:block;padding:0 2rem;height:62px;line-height:62px;font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sand);text-decoration:none;border-bottom:3px solid transparent;transition:all .2s;white-space:nowrap}
   .nav-tabs li a:hover,.nav-tabs li a.active{color:var(--cream);border-bottom-color:var(--lichen)}
 
   /* STAT BAR */
@@ -147,45 +142,6 @@
   .pull-quote p{font-family:'Playfair Display',serif;font-size:clamp(1.3rem,2.5vw,2rem);font-style:italic;line-height:1.5;position:relative;z-index:1;max-width:700px}
   .pull-quote cite{display:block;margin-top:1.5rem;font-family:'DM Mono',monospace;font-size:.75rem;letter-spacing:.15em;color:#fff;font-style:normal}
 
-  /* LAND ACK */
-  .land-ack{background:#f0ece3;border-left:4px solid #9b6940;padding:2rem 2.5rem}
-  .land-ack h4{font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--bark);margin-bottom:.75rem}
-  .land-ack p{font-size:.9rem;color:#555;line-height:1.8;font-weight:300;font-style:italic}
-
-  /* FILTER BAR */
-  .filter-bar{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.5rem}
-  .filter-btn{font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;padding:.5rem 1rem;border:1px solid var(--sand);background:transparent;color:#666;cursor:pointer;transition:all .2s}
-  .filter-btn:hover,.filter-btn.active{background:var(--bark);color:#fff;border-color:var(--bark)}
-
-  /* LEGEND */
-  .species-legend{display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:2rem;padding:1rem 1.5rem;background:var(--cream);border:1px solid var(--sand)}
-  .legend-item{display:flex;align-items:center;gap:.5rem;font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.1em;color:#555}
-  .legend-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-  .dot-common{background:#3d5a3e}
-  .dot-at-risk{background:#b85c38}
-  .dot-rare{background:#c9a84c}
-  .dot-invasive{background:#8b4ca8}
-
-  /* SPECIES GRID */
-  .species-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1px;background:var(--sand);border:1px solid var(--sand)}
-  .species-card{background:var(--white);transition:background .2s}
-  .species-card:hover{background:var(--cream)}
-  .species-photo{height:160px;overflow:hidden;position:relative;background:var(--sand)}
-  .species-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
-  .species-card:hover .species-photo img{transform:scale(1.05)}
-  .species-photo-placeholder{height:160px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.5rem;background:linear-gradient(135deg,var(--sand),#c8bfaa);color:#999;font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase}
-  .species-photo-placeholder .ph-icon{font-size:2.2rem;opacity:.35}
-  .species-body{padding:1.6rem}
-  .species-status{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:.5rem;vertical-align:middle}
-  .status-common{background:#3d5a3e}
-  .status-at-risk{background:#b85c38}
-  .status-rare{background:#c9a84c}
-  .status-invasive{background:#8b4ca8}
-  .species-type-tag{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:#999;margin-bottom:.6rem}
-  .species-card h4{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--charcoal);margin-bottom:.2rem}
-  .species-card .latin{font-style:italic;font-size:.8rem;color:#888;font-weight:300;margin-bottom:.8rem}
-  .species-card p{font-size:.83rem;color:#666;line-height:1.65;font-weight:300}
-
   /* PROJECTS */
   .projects-list{display:flex;flex-direction:column}
   .project-row{display:grid;grid-template-columns:80px 1fr auto;gap:2rem;align-items:start;padding:2.5rem 0;border-bottom:1px solid var(--sand);transition:all .2s}
@@ -200,20 +156,8 @@
   .status-complete{background:rgba(123,167,188,.15);color:#4a7d95}
   .project-acres{margin-top:.6rem;font-family:'DM Mono',monospace;font-size:.68rem;color:#aaa}
 
-  /* GALLERY */
-  .gallery-intro{font-size:1rem;color:#666;font-weight:300;line-height:1.7;max-width:600px;margin-bottom:3rem}
-  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;grid-auto-rows:280px}
-  .gallery-cell{background:linear-gradient(135deg,var(--sand),#b8af9a);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .25s,opacity .25s}
-  .gallery-cell:hover{opacity:.9;transform:scale(1.01)}
-  .gallery-cell img{width:100%;height:100%;object-fit:cover;display:block}
-  .gallery-cell.tall{grid-row:span 1}
-  .gallery-cell.wide{grid-column:span 1}
-  .gallery-cell-inner{text-align:center;color:#888}
-  .gallery-cell-inner .ph-icon{font-size:2rem;display:block;opacity:.4;margin-bottom:.4rem}
-  .gallery-cell-label{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;opacity:.6}
-
   /* INVOLVE */
-  .involve-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem;margin-bottom:4rem}
+  .involve-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem;margin-top:2.5rem;margin-bottom:4rem}
   .involve-card{padding:2.5rem;background:var(--pale-green);border-bottom:3px solid var(--bark)}
   .involve-card h3{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;margin-bottom:.75rem}
   .involve-card p{font-size:.88rem;color:#666;line-height:1.7;font-weight:300;margin-bottom:1.5rem}
@@ -247,49 +191,6 @@
   .nav-logo img{filter:brightness(0) invert(1);transition:opacity .2s}
   .nav-logo img:hover{opacity:.85}
 
-  /* PROVINCE STRIP */
-  .province-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:0;background:var(--pale-green);border-bottom:1px solid var(--sand)}
-  .province-card{padding:2rem 1.5rem;border-right:1px solid var(--sand);position:relative;overflow:hidden}
-  .province-card:last-child{border-right:none}
-  .province-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--bark)}
-  .province-tag{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:#3a5230;margin-bottom:.5rem;font-weight:500}
-  .province-name{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;margin-bottom:.4rem}
-  .province-desc{font-size:.78rem;color:#666;line-height:1.6;font-weight:300}
-
-  /* VISION BLOCK */
-  /* ── ABOUT SECTION GRID ── */
-  .about-grid{
-    display:grid;
-    grid-template-columns:1fr 1.5fr;
-    grid-template-rows:auto auto;
-    column-gap:5rem;
-    row-gap:3rem;
-    margin-bottom:4rem;
-    padding-bottom:4rem;
-    border-bottom:1px solid var(--sand)
-  }
-  .about-title-col{grid-column:1;grid-row:1;align-self:start}
-  .about-vision-col{grid-column:2;grid-row:1;align-self:start}
-  .about-ack-col{grid-column:1;grid-row:2;align-self:stretch}
-  .about-stats-col{grid-column:2;grid-row:2;align-self:start}
-
-  .about-eyebrow{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--bark);margin-bottom:1rem;opacity:.9}
-  .about-h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--charcoal);line-height:1.05;margin-bottom:1rem}
-  .about-tagline{font-size:.93rem;color:#666;line-height:1.75;font-weight:300;max-width:340px}
-  .about-vision-h3{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--charcoal);line-height:1.2;margin-bottom:1rem}
-  .about-vision-h3 em{font-style:italic;color:var(--sage)}
-  .about-vision-col p{font-size:.93rem;color:#555;line-height:1.85;font-weight:300;margin-bottom:.8rem}
-  .about-ack-col .land-ack{height:100%;box-sizing:border-box;margin:0;max-width:none}
-  .vision-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-  .vision-stat{background:var(--forest);color:var(--cream);padding:1.5rem;text-align:center}
-  .vision-stat-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:#fff;display:block}
-  .vision-stat-label{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.65);margin-top:.3rem;display:block}
-
-  /* DIRECTORS */
-  .director-photo{width:110px;height:110px;border-radius:50%;object-fit:cover;border:4px solid var(--pale-green);box-shadow:0 4px 20px rgba(0,0,0,.12);margin-bottom:1.2rem;display:block}
-  .director-photo-wrap{display:flex;align-items:flex-start;gap:1.8rem;margin-bottom:1.2rem}
-  .director-photo-wrap .director-photo{width:90px;height:90px;flex-shrink:0;margin-bottom:0}
-  .director-photo-info{}
   /* DIRECTOR */
   .directors-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem}
   .director-card{background:var(--warm-white);padding:2.5rem;position:relative;border-top:3px solid var(--sage);box-shadow:0 2px 20px rgba(0,0,0,.06)}
@@ -341,62 +242,231 @@
 
   /* RESPONSIVE */
   @media(max-width:900px){
-    .province-strip{grid-template-columns:1fr 1fr}
-    .about-grid{grid-template-columns:1fr;row-gap:2rem}
-    .about-title-col,.about-vision-col,.about-ack-col,.about-stats-col{grid-column:1}
-    .about-title-col{grid-row:1}.about-vision-col{grid-row:2}.about-ack-col{grid-row:3}.about-stats-col{grid-row:4}
-    .about-tagline{max-width:none}
-    .directors-grid{grid-template-columns:1fr}
-    .vision-block{grid-template-columns:1fr}
-    .rewild-principles{grid-template-columns:1fr 1fr}
-    .local-examples{grid-template-columns:1fr}
-    .mission-grid{grid-template-columns:1fr}
-    .involve-grid{grid-template-columns:1fr}
+    /* Nav */
+    .hero-nav-links{display:none}
+    /* About */
+    .about-leader-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:4rem;align-items:start;padding-top:1rem}
+    /* Projects */
+    .proj-card-grid{grid-template-columns:1fr}
+    /* Stats */
     .stat-bar{grid-template-columns:1fr 1fr}
-    footer{grid-template-columns:1fr}
-    .pull-quote{padding:2.5rem}
-    .rewild-global-inner{grid-template-columns:1fr}
-    .gallery-grid{grid-template-columns:repeat(2,1fr)}
+    /* Rewilding */
+    .rewild-principles{grid-template-columns:1fr 1fr}
     .rewild-hero-split{grid-template-columns:1fr}
     .rewild-hero-left{position:static}
-    .hero-stats{bottom:1.5rem;right:1.5rem;gap:.5rem}
+    /* Connect */
+    .involve-grid{grid-template-columns:1fr}
+    .rewild-global-inner{grid-template-columns:1fr}
+    .connect-bottom-grid{grid-template-columns:1fr!important;display:block!important}
+    .connect-bottom-grid>div+div{margin-top:3rem}
+    /* Directors */
+    .directors-grid{grid-template-columns:1fr}
+    /* Local examples */
+    .local-examples{grid-template-columns:1fr}
+    footer{grid-template-columns:1fr}
+    .pull-quote{padding:2.5rem}
+    .hero-stats{bottom:1rem;right:1rem;gap:.4rem}
   }
   @media(max-width:600px){
-    .section{padding:3rem 5vw}
+    /* Sections */
+    .section{padding:3.5rem 5vw}
     nav{padding:0 4vw}
-    .stat-bar{grid-template-columns:1fr 1fr}
-    .stat-item{padding:1.5rem 1rem}
-    .stat-num{font-size:1.8rem}
-    .province-strip{grid-template-columns:1fr}
-    .gallery-grid{grid-template-columns:1fr}
-    .gallery-grid{grid-auto-rows:240px}
-    .about-grid{column-gap:0}
-    .vision-stat-grid{grid-template-columns:1fr 1fr}
+    /* Hero */
     .hero-stats{display:none}
-    .hero-nav-links{display:none}
-    .director-photo-wrap{flex-direction:column;gap:1rem}
+    .slide-centre{padding:0 5vw}
+    .slide-headline{font-size:clamp(1.6rem,7vw,2.4rem)}
+    /* Nav tabs — scrollable row, no wrap */
+    .nav-tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+    .nav-tabs::-webkit-scrollbar{display:none}
+    .nav-tabs li a{padding:.85rem 1rem;font-size:.63rem;white-space:nowrap}
+    /* Stat bar */
+    .stat-bar{grid-template-columns:1fr 1fr}
+    .stat-item{padding:1.4rem 1rem}
+    .stat-num{font-size:1.6rem}
+    /* Mission hero */
+    .mission-hero-h2{font-size:1.8rem}
+    /* About leader */
+    .about-leader-photo{width:80px;height:80px}
+    .about-h2{font-size:1.8rem}
+    /* Projects */
+    .proj-card-photo{height:220px;overflow:hidden;position:relative;background:var(--pale-green);flex-shrink:0}
+    .prop-name{font-size:1.4rem}
+    .proj-species-strip{gap:.3rem}
+    .proj-species-chip{font-size:.55rem}
+    /* Rewilding */
     .rewild-principles{grid-template-columns:1fr}
-    .involve-grid{grid-template-columns:1fr}
+    .rewild-canada-box{padding:2rem 1.5rem}
+    /* Connect */
     .rewild-global-block{padding:2.5rem 1.5rem}
     .global-stats{grid-template-columns:1fr 1fr}
-    .mission-hero{padding:3.5rem 5vw 4rem;margin:-3rem -5vw 3rem}
-    .mission-hero-h2{font-size:2rem}
     .contact-form{grid-template-columns:1fr}
-    [style*="grid-template-columns:1fr 1fr"]{display:block!important}
-    .nav-tabs{gap:0;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;padding:0 1rem}
-    .nav-tabs a{padding:.85rem .9rem;font-size:.6rem;white-space:nowrap}
-    .sub-project{grid-template-columns:40px 1fr;gap:1rem}
-    .sub-meta{display:none}
-    .directors-grid{gap:1.5rem}
-    .director-card{padding:1.5rem}
+    /* Typography */
+    .section-title-block h2{font-size:1.6rem}
+    .prop-meta{font-size:.58rem}
   }
-  @media(max-width:768px){
-    .section{padding:4rem 5vw}
-    nav{padding:0 3vw}
-    .project-row{grid-template-columns:50px 1fr}
-    .project-meta{display:none}
-    .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}
-    .contact-form{grid-template-columns:1fr}
+
+  /* ══ ABOUT LEADER GRID ══ */
+  .about-mission-block{background:var(--deep-green);padding:2rem 2rem 2.2rem;margin-bottom:0}
+  .about-mission-label{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--lichen);margin-bottom:.8rem}
+  .about-mission-h2{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:#fff;line-height:1.15;margin-bottom:.8rem}
+  .about-mission-sub{font-size:.88rem;color:rgba(255,255,255,.68);line-height:1.75;font-weight:300}
+
+  .about-leader-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:start;padding-top:1rem}
+  .about-eyebrow{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--bark);margin-bottom:1rem}
+  .about-leader-card{background:var(--warm-white);border:1px solid var(--sand);padding:1.8rem 2rem}
+  .about-leader-photo{width:96px;height:96px;border-radius:50%;object-fit:cover;object-position:top center;display:block;flex-shrink:0;border:3px solid var(--pale-green)}
+  .about-leader-name{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--charcoal);margin:1.2rem 1.5rem .2rem}
+  .about-leader-role{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bark);margin:0 1.5rem .8rem}
+  .about-leader-bio{font-size:.88rem;color:#555;line-height:1.8;font-weight:300;padding:0 1.5rem}
+  .about-leader-card .director-creds{padding:1.2rem 1.5rem 1.5rem;display:flex;flex-wrap:wrap;gap:.4rem}
+
+  .about-vision-side{padding-top:.5rem}
+  .about-h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:900;color:var(--charcoal);line-height:1.05;margin:1rem 0 .8rem}
+  .about-tagline{font-size:.95rem;color:#666;line-height:1.75;font-weight:300;margin-bottom:1.5rem}
+  .about-divider{height:1px;background:var(--sand);margin:1.8rem 0}
+  .about-vision-h3{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--charcoal);line-height:1.2;margin-bottom:.9rem}
+  .about-vision-h3 em{font-style:italic;color:var(--sage)}
+  .about-vision-p{font-size:.92rem;color:#555;line-height:1.85;font-weight:300;margin-bottom:.8rem}
+
+  /* ══ PROJECT CARDS ══ */
+  .prop-section{margin-bottom:5rem}
+  .prop-label{margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--forest)}
+  .prop-tag{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--bark);margin-bottom:.5rem}
+  .prop-name{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:700;color:var(--charcoal);margin-bottom:.3rem}
+  .prop-meta{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.1em;color:#999}
+  .proj-card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem}
+  .proj-card{background:#fff;border:1px solid var(--sand);overflow:hidden;transition:box-shadow .25s,transform .25s;display:flex;flex-direction:column}
+  .proj-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.1);transform:translateY(-3px)}
+  .proj-card-photo{height:240px;background-color:var(--pale-green);position:relative;overflow:hidden}
+  .proj-card-photo img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+  .proj-card-photo:not(:has(img)) .proj-card-photo-fallback{opacity:.35}
+  .proj-card-photo img ~ .proj-card-photo-fallback{display:none}
+  .proj-card-photo-fallback{font-size:3rem;opacity:.35;position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+  .proj-status-badge{position:absolute;top:.9rem;right:.9rem;font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;padding:.3rem .75rem;border-radius:2px;font-weight:500;z-index:1}
+  .status-active{background:var(--deep-green);color:var(--lichen)}
+  .status-planning{background:var(--bark);color:#fff}
+  .proj-card-body{padding:1.6rem;flex:1;display:flex;flex-direction:column}
+  .proj-card-meta{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:#aaa;margin-bottom:.45rem}
+  .proj-card-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--charcoal);margin-bottom:.7rem;line-height:1.2}
+  .proj-card-desc{font-size:.87rem;color:#555;line-height:1.75;font-weight:300;margin-bottom:1.1rem}
+  .proj-species-strip{display:flex;flex-wrap:wrap;gap:.4rem;padding-top:1rem;border-top:1px solid var(--sand)}
+  .proj-species-chip{font-family:'DM Mono',monospace;font-size:.57rem;letter-spacing:.07em;text-transform:uppercase;padding:.25rem .6rem;border-radius:2rem;background:var(--pale-green);color:#3a5230;border:1px solid rgba(61,90,62,.15)}
+  .proj-species-chip.inv{background:rgba(184,92,56,.08);color:#8a3820;border-color:rgba(184,92,56,.2)}
+  .proj-species-chip.at-risk{background:rgba(180,140,20,.1);color:#7a5a08;border-color:rgba(180,140,20,.25)}
+
+
+  /* ── BIODIVERSITY MOSAIC ── */
+  .bio-mosaic{background:var(--deep-green);padding:1.4rem 1.5rem;display:flex;flex-direction:column;box-sizing:border-box;flex-shrink:0}
+  .bio-mosaic-label{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--lichen);margin-bottom:.8rem;flex-shrink:0}
+  .bio-mosaic-grid{display:flex;flex-wrap:wrap;gap:.3rem;align-content:flex-start}
+  .bio-chip{font-family:'DM Mono',monospace;font-size:.52rem;letter-spacing:.04em;padding:.18rem .45rem;border-radius:2rem;background:rgba(255,255,255,.1);color:rgba(255,255,255,.82);border:1px solid rgba(255,255,255,.15);white-space:nowrap}
+  .bio-chip-atrisk{background:rgba(180,140,20,.25);color:#f0d060;border-color:rgba(180,140,20,.4)}
+  .bio-chip-plant{background:rgba(61,90,62,.35);color:#a8d4a0;border-color:rgba(107,143,94,.4)}
+  .bio-chip-inv{background:rgba(184,92,56,.2);color:#e8a080;border-color:rgba(184,92,56,.35)}
+
+
+  .about-leader-header{display:flex;align-items:center;gap:1.2rem;margin-bottom:1.4rem}
+  .about-leader-name{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:var(--charcoal);margin:0 0 .2rem}
+  .about-leader-role{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bark);margin:0}
+  .about-leader-bio{font-size:.88rem;color:#555;line-height:1.8;font-weight:300;margin-bottom:.8rem}
+  .about-leader-card .director-creds{margin-top:1rem;display:flex;flex-wrap:wrap;gap:.4rem}
+
+  
+  /* FOUNDER BANNER */
+  .founder-banner{margin:3rem -6vw 0;background:var(--pale-green);padding:4rem 6vw 4.5rem;border-top:3px solid var(--sage)}
+  .founder-quote-wrap{text-align:center;margin-bottom:4rem;padding-bottom:3.5rem;border-bottom:1px solid var(--sand)}
+  .founder-quote-mark{font-family:'Playfair Display',serif;font-size:8rem;line-height:.6;color:var(--sage);opacity:.4;margin-bottom:.5rem}
+  .founder-quote{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.5vw,2.8rem);font-style:italic;font-weight:700;color:var(--charcoal);line-height:1.2;max-width:760px;margin:0 auto}
+  .founder-profile{display:flex;align-items:flex-start;gap:3rem;max-width:760px;margin:0 auto}
+  .founder-photo{width:140px;height:140px;border-radius:50%;object-fit:cover;object-position:top center;flex-shrink:0;border:4px solid #fff;box-shadow:0 4px 20px rgba(0,0,0,.12)}
+  .founder-info{padding-top:.5rem}
+  .founder-name{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--charcoal);margin-bottom:.3rem}
+  .founder-title{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;color:var(--bark);margin-bottom:1.2rem}
+  .founder-creds{display:flex;flex-wrap:wrap;gap:.4rem}
+
+  @media(max-width:700px){
+    .founder-profile{flex-direction:column;align-items:center;text-align:center}
+    .founder-creds{justify-content:center}
+    .about-mission-full{margin:-3.5rem -5vw 0;padding:3rem 5vw}
+    .founder-banner{margin:3rem -5vw 0;padding:3rem 5vw}
+  }
+
+  
+  /* FOUNDER BANNER */
+  .founder-banner{background:var(--deep-green);padding:5rem 6vw;text-align:center}
+
+  .founder-quote-wrap{margin-bottom:3.5rem}
+  .founder-quote{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2.4rem);font-style:italic;font-weight:700;color:#fff;line-height:1.25;max-width:700px;margin:0 auto;position:relative}
+  .fq-open{font-size:1.3em;color:var(--lichen);margin-right:.1em;vertical-align:-.15em;font-style:normal}
+  .fq-close{font-size:1.3em;color:var(--lichen);margin-left:.1em;vertical-align:-.15em;font-style:normal}
+
+  .founder-profile{display:flex;flex-direction:column;align-items:center;gap:.8rem}
+  .founder-photo{width:130px;height:130px;border-radius:50%;object-fit:cover;object-position:top center;border:4px solid rgba(255,255,255,.2);box-shadow:0 4px 24px rgba(0,0,0,.25)}
+  .founder-name{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:#fff;margin:0}
+  .founder-title{font-family:'DM Mono',monospace;font-size:.63rem;letter-spacing:.16em;text-transform:uppercase;color:var(--lichen);margin:0}
+
+  @media(max-width:750px){
+    .about-top-split{grid-template-columns:1fr;margin:-3.5rem -5vw 0}
+    .about-mission-col{padding:3rem 5vw}
+    .about-vision-col{padding:3rem 5vw}
+    .founder-banner{padding:4rem 5vw;margin:0 -5vw}
+  }
+
+  
+  /* ── ABOUT PAGE ── */
+  #mission{padding-top:0}
+
+  /* Mission banner — sits flush at top, replaces stat bar */
+  .about-mission-banner{background:var(--deep-green);padding:3.2rem 6vw;text-align:center;margin:0 -6vw}
+  .about-mission-banner-inner{max-width:680px;margin:0 auto}
+  .about-mission-label{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--lichen);margin-bottom:.9rem;display:block}
+  .about-mission-h2{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3vw,2.6rem);font-weight:900;color:#fff;line-height:1.05;margin-bottom:.9rem}
+  .about-mission-sub{font-size:.93rem;color:rgba(255,255,255,.7);line-height:1.75;font-weight:300}
+
+  /* Intro + vision grid */
+  .about-intro-wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:4rem;padding:3rem 0 3.5rem;border-bottom:1px solid var(--sand)}
+  .about-intro-eyebrow{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--bark);margin-bottom:1rem;display:block}
+  .about-intro-h2{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3vw,2.4rem);font-weight:900;color:var(--charcoal);line-height:1.05;margin-bottom:1.1rem}
+  .about-intro-body{font-size:.92rem;color:#555;line-height:1.85;font-weight:300;margin-bottom:.9rem}
+  .about-nv-eyebrow em{font-style:italic;font-family:'Playfair Display',serif;font-size:.82rem;text-transform:none;letter-spacing:.04em}
+
+  .about-intro-projects{margin-top:1.8rem;padding-top:1.4rem;border-top:1px solid var(--sand)}
+  .about-intro-projects-label{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--bark);font-weight:600;margin-bottom:.9rem;display:block}
+  .about-intro-proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+  .about-intro-prop-name{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--charcoal);margin-bottom:.6rem}
+  .about-intro-proj-list{list-style:none;padding:0;margin:0}
+  .about-intro-proj-list li{font-family:'DM Mono',monospace;font-size:.72rem;letter-spacing:.06em;color:var(--charcoal);font-weight:500;padding:.3rem 0;border-bottom:1px solid var(--sand);line-height:1.6}
+  .about-intro-proj-list li:last-child{border-bottom:none}
+
+  .about-intro-photos{display:flex;flex-direction:column;gap:1rem}
+  .about-intro-photo-slot{position:relative;flex:1;min-height:200px;background:var(--pale-green);overflow:hidden;border:1px solid var(--sand)}
+  .about-intro-photo-slot img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;position:absolute;inset:0}
+  .about-intro-photo-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:#bbb}
+  .about-intro-photo-caption{position:absolute;bottom:0;left:0;right:0;padding:.45rem .8rem;background:rgba(20,45,20,.6);font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.85)}
+
+  /* FOUNDER BANNER */
+  .founder-banner{background:var(--deep-green);padding:4.5rem 6vw;text-align:center}
+  .founder-quote-wrap{margin-bottom:3rem}
+  .founder-quote{font-family:'Playfair Display',serif;font-size:clamp(1.4rem,2.8vw,2.2rem);font-style:italic;font-weight:700;color:#fff;line-height:1.25;max-width:680px;margin:0 auto}
+  .fq-open,.fq-close{font-size:1.25em;color:var(--lichen);font-style:normal;line-height:0;vertical-align:-.1em}
+  .fq-open{margin-right:.05em}
+  .fq-close{margin-left:.05em}
+  .founder-profile{display:flex;flex-direction:column;align-items:center;gap:.7rem}
+  .founder-photo{width:120px;height:120px;border-radius:50%;object-fit:cover;object-position:top center;border:4px solid rgba(255,255,255,.18);box-shadow:0 4px 20px rgba(0,0,0,.22)}
+  .founder-name{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:#fff;margin:0}
+  .founder-title{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--lichen);margin:0}
+
+  @media(max-width:850px){
+    .about-intro-wrap{grid-template-columns:1fr;gap:2.5rem}
+    .about-intro-photos{flex-direction:row;height:200px}
+    .about-intro-photo-slot{min-height:unset}
+  }
+  @media(max-width:550px){
+    .about-intro-photos{flex-direction:column;height:auto}
+    .about-intro-photo-slot{min-height:180px}
+    .about-intro-proj-grid{grid-template-columns:1fr}
+    .about-mission-banner{padding:2.5rem 5vw;margin:0 -5vw}
+    .founder-banner{padding:3.5rem 5vw}
   }
 </style>
 </head>
@@ -405,13 +475,8 @@
 <!-- HERO SLIDESHOW -->
 <section class="hero" id="hero">
 
-  <!-- Slide backgrounds - reliable image sources -->
+  <!-- Single background image -->
   <div class="slide active" style="background-image:url('PIctures/ON-GBI-2015-20-scaled.jpg')"></div>
-  <div class="slide" style="background-image:url('PIctures/haikang-z-qQZgQ5hV_kQ-unsplash.jpg')"></div>
-  <div class="slide" style="background-image:url('PIctures/pexels-nunzio-guerrera-669207708-36485050.jpg')"></div>
-  <div class="slide" style="background-image:url('PIctures/photo-1527489377706-5bf97e608852.avif')"></div>
-  <div class="slide" style="background-image:url('PIctures/john-lee-oMneOBYhJxY-unsplash.jpg')"></div>
-  <div class="slide-overlay"></div>
 
   <!-- TOP BAR: Logo + nav links overlaid on image -->
   <div class="hero-topbar">
@@ -421,11 +486,8 @@
     <ul class="hero-nav-links">
       <li><a href="#" onclick="showSection('mission',document.querySelectorAll('.nav-tabs a')[0]);return false;">About</a></li>
       <li><a href="#" onclick="showSection('rewilding',document.querySelectorAll('.nav-tabs a')[1]);return false;">What is Rewilding?</a></li>
-      <li><a href="#" onclick="showSection('wildlife',document.querySelectorAll('.nav-tabs a')[2]);return false;">Wildlife</a></li>
-      <li><a href="#" onclick="showSection('plants',document.querySelectorAll('.nav-tabs a')[3]);return false;">Plants</a></li>
-      <li><a href="#" onclick="showSection('projects',document.querySelectorAll('.nav-tabs a')[4]);return false;">Projects</a></li>
-      <li><a href="#" onclick="showSection('gallery',document.querySelectorAll('.nav-tabs a')[5]);return false;">Gallery</a></li>
-      <li><a href="#" onclick="showSection('involve',document.querySelectorAll('.nav-tabs a')[6]);return false;">Connect</a></li>
+      <li><a href="#" onclick="showSection('projects',document.querySelectorAll('.nav-tabs a')[2]);return false;">Projects</a></li>
+      <li><a href="#" onclick="showSection('involve',document.querySelectorAll('.nav-tabs a')[3]);return false;">Connect</a></li>
     </ul>
   </div>
 
@@ -440,17 +502,12 @@
     </div>
   </div>
 
-  <!-- BOTTOM: Arrow controls + dots -->
-  <div class="slide-controls">
-    <button class="slide-prev" onclick="moveSlide(-1)">&#8592;</button>
-    <div id="slide-dots"></div>
-    <button class="slide-next" onclick="moveSlide(1)">&#8594;</button>
-  </div>
+
 
   <!-- BOTTOM RIGHT: Stat pills -->
   <div class="hero-stats">
-    <div class="hero-stat-pill"><span class="n">12,500</span><span class="l">Trees Planted</span></div>
-    <div class="hero-stat-pill"><span class="n">10km</span><span class="l">Fencing Removed</span></div>
+    <div class="hero-stat-pill"><span class="n">16,500</span><span class="l">Trees Planted</span></div>
+    <div class="hero-stat-pill"><span class="n">2.5km</span><span class="l">Fencing Removed</span></div>
     <div class="hero-stat-pill"><span class="n">Year 2</span><span class="l">Underway</span></div>
   </div>
 
@@ -464,161 +521,96 @@
   <ul class="nav-tabs">
     <li><a href="#" class="active" onclick="showSection('mission',this);return false;">About</a></li>
     <li><a href="#" onclick="showSection('rewilding',this);return false;">What is Rewilding?</a></li>
-    <li><a href="#" onclick="showSection('wildlife',this);return false;">Wildlife</a></li>
-    <li><a href="#" onclick="showSection('plants',this);return false;">Plants</a></li>
     <li><a href="#" onclick="showSection('projects',this);return false;">Projects</a></li>
-    <li><a href="#" onclick="showSection('gallery',this);return false;">Gallery</a></li>
     <li><a href="#" onclick="showSection('involve',this);return false;">Connect</a></li>
   </ul>
 </nav>
 
 <!-- STAT BAR -->
 <div class="stat-bar">
-  <div class="stat-item"><span class="stat-num">12,500</span><span class="stat-label">Native Trees Planted</span></div>
-  <div class="stat-item"><span class="stat-num">10km</span><span class="stat-label">Wire Fencing Removed</span></div>
-  <div class="stat-item"><span class="stat-num">200</span><span class="stat-label">Active Acres</span></div>
+  <div class="stat-item"><span class="stat-num">16,500</span><span class="stat-label">Native Trees Planted</span></div>
+  <div class="stat-item"><span class="stat-num">2.5km</span><span class="stat-label">Wire Fencing Removed</span></div>
+  <div class="stat-item"><span class="stat-num">270</span><span class="stat-label">Active Acres</span></div>
   <div class="stat-item"><span class="stat-num">Year 2</span><span class="stat-label">Underway · Niagara Escarpment</span></div>
 </div>
 
 <!-- ══ ABOUT ══ -->
 <section id="mission" class="section active">
-  <!-- HERO MISSION STATEMENT -->
-  <div class="mission-hero">
-    <div class="mission-hero-inner">
-      <p class="mission-hero-label">Our Mission</p>
-      <h2 class="mission-hero-h2">Less management.<br>More trust.<br>Longer thinking.</h2>
-      <p class="mission-hero-sub">Canada holds some of the last intact wild landscapes on earth. We believe the most powerful act of conservation is often simply to step back — to remove the fences, restore the flow, and let nature find its own complexity again. Rewilding Canada starts here, on the Niagara Escarpment, and aims to grow.</p>
+
+  <!-- MISSION BANNER -->
+  <div class="about-mission-banner">
+    <div class="about-mission-banner-inner">
+      <p class="about-mission-label">Our Mission</p>
+      <h2 class="about-mission-h2">Less management.<br>More trust.<br>Longer thinking.</h2>
+      <p class="about-mission-sub">Rewilding Canada aims to bring back wild nature at scale in Canada in ways that benefit both nature and people.</p>
     </div>
   </div>
 
-  <div class="about-grid">
+  <!-- STARTING SMALL + PROJECTS + PHOTOS -->
+  <div class="about-intro-wrap">
 
-    <!-- TOP-LEFT: main title -->
-    <div class="about-title-col">
-      <h2 class="about-h2">🌿 Giving the Land<br>Back to Itself</h2>
-      <p class="about-tagline">Rewilding Canada restores wild landscapes one property at a time — removing fences, reviving streams, and letting nature lead.</p>
-    </div>
+    <div class="about-intro-text">
+      <p class="about-intro-eyebrow">🌿 Where We Are Now</p>
+      <h2 class="about-intro-h2">Starting Small.<br>Thinking Big.</h2>
+      <p class="about-intro-body">We want to accelerate nature recovery across the country by reintroducing keystone species, removing man-made barriers, and conserving existing natural spaces to allow natural processes to thrive. Our mission is to demonstrate that a wilder Canada is possible and inspire others to engage in rewilding — with the goal of creating a climate-resilient, healthy, and prosperous society.</p>
+      <p class="about-intro-body">We're currently working across two private properties on the Niagara Escarpment near Ravenna, Ontario. No heavy machinery, no outside inputs — just patient, hands-on restoration work to let the land begin recovering on its own terms.</p>
 
-    <!-- TOP-RIGHT: national vision -->
-    <div class="about-vision-col">
-      <h3 class="about-vision-h3">A National Vision, <em>Starting Here</em></h3>
-      <p>Canada holds roughly 20% of the world's freshwater, nearly a quarter of its boreal forest, and some of the last intact temperate rainforest on earth. Yet decades of agricultural intensification, resource extraction, and urban sprawl have fragmented much of what remains. Rewilding Canada aims to change the relationship between landowners and the land beneath their feet.</p>
-      <p>We are starting with two private properties in Ravenna, Ontario — and we aim to grow. Our aspiration is to connect landowners, scientists, and communities across provinces around a shared understanding: healthy land is not idle land. It is the most productive thing any of us can steward.</p>
-      <p>Less management. More trust. Longer thinking. These are the principles guiding everything we do.</p>
-    </div>
-
-    <!-- BOTTOM-LEFT: land acknowledgment — aligned under title -->
-    <div class="about-ack-col">
-      <div class="land-ack">
-        <h4>Land Acknowledgment</h4>
-        <p>The lands we work on, and the lands we aspire to restore across Canada, are the ancestral territories of Indigenous peoples who have stewarded these ecosystems for thousands of years. We are guests here. Our work is informed by — and should always remain accountable to — Indigenous knowledge, leadership, and sovereignty over these landscapes.</p>
-      </div>
-    </div>
-
-    <!-- BOTTOM-RIGHT: stat tiles — aligned under vision text -->
-    <div class="about-stats-col">
-      <div class="vision-stat-grid">
-        <div class="vision-stat"><span class="vision-stat-num">9.98M</span><span class="vision-stat-label">km² of Canada — one of the world's last great wild places</span></div>
-        <div class="vision-stat"><span class="vision-stat-num">~50%</span><span class="vision-stat-label">of Canada's native grasslands have been lost since settlement</span></div>
-        <div class="vision-stat"><span class="vision-stat-num">70%</span><span class="vision-stat-label">of boreal songbird species depend on intact forest corridors</span></div>
-        <div class="vision-stat"><span class="vision-stat-num">20%</span><span class="vision-stat-label">of Earth's freshwater flows through Canadian watersheds</span></div>
-      </div>
-    </div>
-
-  </div>
-
-    <div class="section-header" style="margin-top:4rem;margin-bottom:3.5rem;">
-    <div class="section-number">🗺</div>
-    <div class="section-title-block">
-      <h2><span class="title-emoji">🗺</span>Rewilding Across Canada</h2>
-      <p>Every Canadian province holds a distinct ecological story — and a distinct set of pressures. We aim to work across these differences, not despite them.</p>
-    
-
-  <div class="province-strip">
-    <div class="province-card">
-      <div class="province-tag">British Columbia</div>
-      <div class="province-name">Temperate Rainforest & Salmon Rivers</div>
-      <div class="province-desc">Old-growth under pressure from logging. Salmon runs declining but recoverable. Rewilding here means defending what remains and restoring riparian corridors that connect mountain snowpack to the sea.</div>
-    </div>
-    <div class="province-card">
-      <div class="province-tag">The Prairies</div>
-      <div class="province-name">Lost Grasslands & Missing Bison</div>
-      <div class="province-desc">Less than 20% of native prairie remains. Bison reintroduction is underway in pockets. Regenerative agriculture partnerships could unlock enormous habitat potential across Saskatchewan and Manitoba.</div>
-    </div>
-    <div class="province-card">
-      <div class="province-tag">Ontario & Quebec</div>
-      <div class="province-name">Fragmented Forest, Recovering Wetlands</div>
-      <div class="province-desc">Southern Ontario is among the most ecologically fragmented regions in the country. The Niagara Escarpment — where we are starting — is one of the last continuous corridors. Wetland restoration is accelerating across the Shield.</div>
-    </div>
-    <div class="province-card">
-      <div class="province-tag">The Maritimes</div>
-      <div class="province-name">Atlantic Salmon & Acadian Forest</div>
-      <div class="province-desc">The Acadian forest — a rare mix of boreal and temperate species — is slowly recovering from centuries of clear-cutting. Atlantic salmon populations are a bellwether. Community-led watershed stewardship is showing real results.</div>
-    </div>
-    <div class="province-card">
-      <div class="province-tag">The North</div>
-      <div class="province-name">Boreal & Arctic — Still Largely Intact</div>
-      <div class="province-desc">The boreal and Arctic remain among Earth's most intact ecosystems — but permafrost thaw, resource corridors, and climate shifts are accelerating. Protecting what's intact is its own form of rewilding.</div>
-    </div>
-  </div>
-
-  <div class="pull-quote">
-    <p style="color: black">The goal isn't to return to a specific point in the past. It's to restore the processes — the fire, the flood, the predator, the seed — that allow the land to find its own complexity again.</p>
-    <cite>— Rewilding Canada · Ravenna, Ontario</cite>
-  </div>
-
-  <div class="section-header" style="margin-top:4rem;margin-bottom:2rem;">
-    <div class="section-number">👥</div>
-    <div class="section-title-block">
-      <h2><span class="title-emoji">👥</span>Board of Directors</h2>
-      <p>Rewilding Canada is guided by people who believe that land stewardship and scientific rigour are not in opposition — they are the same thing.</p>
-    
-
-  <div class="directors-grid">
-    <div class="director-card">
-      <div class="director-photo-wrap">
-        <img class="director-photo" src="PIctures/GKnowles.jpeg" alt="George Knowles">
-        <div class="director-photo-info">
-          <div class="director-role">Founder &amp; Land Steward</div>
-          <div class="director-name">George Knowles</div>
+      <div class="about-intro-projects">
+        <p class="about-intro-projects-label">Active Projects</p>
+        <div class="about-intro-proj-grid">
+          <div class="about-intro-proj-col">
+            <p class="about-intro-prop-name">🌾 Brookdale Farm</p>
+            <ul class="about-intro-proj-list">
+              <li>Stream Revival</li>
+              <li>Fence Row Widening</li>
+              <li>Hügelkultur</li>
+              <li>Biodiversity Baseline Survey</li>
+            </ul>
+          </div>
+          <div class="about-intro-proj-col">
+            <p class="about-intro-prop-name">🐦 Swallowfield Farm</p>
+            <ul class="about-intro-proj-list">
+              <li>De-Fencing</li>
+              <li>Heritage Structure Stewardship</li>
+              <li>Native Species Reintroduction</li>
+              <li>Biodiversity Baseline Survey</li>
+              <li>Regenerative Farming</li>
+              <li>Barn Swallow Protection</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="director-bio">
-        <p>George is the proprietor of two properties near Ravenna, Ontario — the Maxwell Property (located in the town of Maxwell) and the Ravenna Property — where Rewilding Canada's first active restoration work is underway. Since moving to the Niagara Escarpment, George's primary mission has been the preservation and sensitive restoration of the area's heritage structures, bringing old barns and stone buildings back to life rather than letting them fall.</p>
-        <p style="margin-top:.8rem">That stewardship of built heritage has evolved into a deeper stewardship of the land itself. George initiated the rewilding work now documented on this site, and occasionally hosts community meetings in the restored barn — gathering neighbours, naturalists, and conservationists around the idea that the Escarpment landscape can be something more than what it currently is.</p>
-        <p style="margin-top:.8rem">George is a member of the Escarpment Corridor Alliance, a regional coalition working to maintain and restore wildlife connectivity along the Niagara Escarpment.</p>
+    </div>
+
+    <div class="about-intro-photos">
+      <div class="about-intro-photo-slot">
+        <img src="IMG_0089.jpeg" alt="Brookdale Farm" onerror="this.style.display='none'">
+        <div class="about-intro-photo-caption">Brookdale Farm · Maxwell, ON</div>
       </div>
-      <div class="director-creds">
-        <span class="director-cred">Escarpment Corridor Alliance</span>
-        <span class="director-cred">Heritage Structure Stewardship</span>
-        <span class="director-cred">Maxwell &amp; Ravenna Properties</span>
+      <div class="about-intro-photo-slot">
+        <img src="BarnRepair.jpg" alt="Swallowfield Farm barn" onerror="this.style.display='none'">
+        <div class="about-intro-photo-caption">Swallowfield Farm· Ravenna, ON</div>
       </div>
     </div>
 
-    <div class="director-card">
-      <div class="director-photo-wrap">
-        <img class="director-photo" src="PIctures/NKnowles.webp" alt="Natalie Knowles">
-        <div class="director-photo-info">
-          <div class="director-role">Executive Director</div>
-          <div class="director-name">Natalie Knowles, PhD</div>
-        </div>
-      </div>
-      <div class="director-bio">
-        <p>Natalie is a Canadian conservationist with a deep passion for the wild landscapes and diverse cultures of our world. She uses participatory research and creative writing to understand the root causes of biodiversity loss and climate change, and to reimagine social-ecological systems aligned with environmental justice and a sustainable future.</p>
-        <p style="margin-top:.8rem">Natalie is currently a Post-Doctoral Researcher working in partnership with the International Conservation Fund of Canada's Kayapo Project. She was named the Scientific Exploration Society's 2023 Neville Shulman Explorer for her work integrating traditional ecological knowledge and conservation technology with Kayapo Xingu communities in Brazil, and was a 2020 UN Young Champions of the Earth regional finalist. Her research has been supported by the Adventure Travel Conservation Fund and The Explorer's Club 2020 Rolex Grant. Natalie also serves as Research &amp; Policy Director for Protect Our Winters Canada.</p>
-      </div>
-      <div class="director-creds">
-        <span class="director-cred">PhD · University of Waterloo</span>
-        <span class="director-cred">MSc Oxford — Distinction</span>
-        <span class="director-cred">UN Young Champions Finalist</span>
-        <span class="director-cred">Protect Our Winters Canada</span>
-        <span class="director-cred">SES 2023 Neville Shulman Explorer</span>
-        <span class="director-cred">Kayapo Project · ICFC</span>
-      </div>
+  </div>
+
+  <!-- FOUNDER BANNER -->
+  <div class="founder-banner">
+    <div class="founder-quote-wrap">
+      <p class="founder-quote">
+        <span class="fq-open">&#8220;</span>Measure once, cut twice.<span class="fq-close">&#8221;</span>
+      </p>
+    </div>
+    <div class="founder-profile">
+      <img class="founder-photo" src="PIctures/NKnowles.webp" alt="Natalie Knowles">
+      <h3 class="founder-name">Natalie Knowles, PhD</h3>
+      <p class="founder-title">Founder &amp; Executive Director</p>
     </div>
   </div>
 
 </section>
+
 
 <!-- ══ WHAT IS REWILDING ══ -->
 <section id="rewilding" class="section">
@@ -663,591 +655,283 @@
     </div>
   </div>
 
-  <div class="rewild-canada-box">
-    <h3>What Does Rewilding Look Like in Canada?</h3>
-    <p>Canada's ecological diversity means rewilding takes different forms in different places. There is no single template. What follows are some of the approaches that resonate most strongly in the landscapes we work in and aspire to reach.</p>
-  </div>
-
-  <div class="local-examples">
-    <div class="local-example">
-      <span class="example-tag">Niagara Escarpment · Ontario</span>
-      <h4>Escarpment Corridor Restoration</h4>
-      <p>The Escarpment is one of the last intact north-south wildlife corridors in southern Ontario. De-fencing farm margins, restoring stream hydrology, and reestablishing native forest at woodland edges can dramatically increase the biological value of private land that flanks the core protected area.</p>
-    </div>
-    <div class="local-example">
-      <span class="example-tag">Georgian Bay · Ontario</span>
-      <h4>Salmon Passage Restoration</h4>
-      <p>Dozens of Escarpment tributaries that once supported Chinook and brook trout runs were channelised or culverted during agricultural intensification. Culvert removal and stream remeandering — already underway on several Grey County properties — allows fish to recolonise habitat that has been physically blocked for decades.</p>
-    </div>
-    <div class="local-example">
-      <span class="example-tag">Southern Ontario · Carolinian Zone</span>
-      <h4>Carolinian Forest Expansion</h4>
-      <p>The Carolinian forest zone — which contains more species at risk than anywhere else in Canada — now covers less than 11% of its original area. Woodland expansion at farm edges, even on modest scales, contributes directly to a regional recovery network that larger conservation organisations cannot achieve alone.</p>
-    </div>
-    <div class="local-example">
-      <span class="example-tag">Across Canada</span>
-      <h4>Grassland & Prairie Recovery</h4>
-      <p>Less than 20% of Canada's native grassland remains. In Saskatchewan and Manitoba, landowner-led initiatives to retire marginal cropland and allow native grasses to return are demonstrating that productive farming and meaningful ecological recovery are not mutually exclusive — they can reinforce each other.</p>
-    </div>
-    <div class="local-example">
-      <span class="example-tag">British Columbia</span>
-      <h4>Old-Growth Stewardship</h4>
-      <p>Some of BC's remaining old-growth forests are on private land. Where landowners choose to protect rather than harvest, the ecological return — in carbon storage, species diversity, and watershed function — is among the highest of any conservation action available in Canada.</p>
-    </div>
-    <div class="local-example">
-      <span class="example-tag">National</span>
-      <h4>Bison & Keystone Species</h4>
-      <p>Before settlement, bison shaped the entire prairie ecosystem through grazing, wallowing, and migration. Several First Nations-led bison restoration projects are underway. On the Escarpment, wolves moving through the corridor serve a comparable function — and their presence, however rare, signals ecosystem health.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ══ WILDLIFE ══ -->
-<section id="wildlife" class="section">
-  <div class="section-header">
-    <div class="section-number">🦌</div>
-    <div class="section-title-block">
-      <h2><span class="title-emoji">🦌</span>Wildlife Observed<br>on the Properties</h2>
-      <p>Species confirmed on or directly adjacent to the two Ravenna properties — documented by trail camera, field observation, and iNaturalist. This list grows as we spend more time looking.</p>
-    
-
-  <div class="filter-bar">
-    <button class="filter-btn active" onclick="filterSpecies('all',this)">All</button>
-    <button class="filter-btn" onclick="filterSpecies('mammal',this)">Mammals</button>
-    <button class="filter-btn" onclick="filterSpecies('bird',this)">Birds</button>
-    <button class="filter-btn" onclick="filterSpecies('fish',this)">Fish</button>
-    <button class="filter-btn" onclick="filterSpecies('amphibian',this)">Amphibians</button>
-    <button class="filter-btn" onclick="filterSpecies('reptile',this)">Reptiles</button>
-    <button class="filter-btn" onclick="filterSpecies('insect',this)">Insects</button>
-  </div>
-
-  <div class="species-legend">
-    <div class="legend-item"><span class="legend-dot dot-common"></span>Common — regularly observed on property</div>
-    <div class="legend-item"><span class="legend-dot dot-at-risk"></span>At Risk — provincially or federally listed</div>
-    <div class="legend-item"><span class="legend-dot dot-rare"></span>Rare — occasional or single sighting</div>
-    <div class="legend-item"><span class="legend-dot dot-invasive"></span>Invasive — non-native, monitoring priority</div>
-  </div>
-
-  <div class="species-grid" id="wildlife-grid">
-
-    <div class="species-card" data-type="mammal">
-      <!-- 📷 PHOTO: White-tailed Deer — replace src with your own image path e.g. src="photos/white-tailed-deer.jpg" -->
-      <div class="species-photo"><img src="Wildlife/White-tailed_deer.jpg" alt="White-tailed Deer" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Mammal</div>
-        <h4>White-tailed Deer</h4><p class="latin">Odocoileus virginianus</p>
-        <p>Seen daily on both properties. Their browsing patterns shift noticeably as cover and food sources evolve — a useful real-time indicator of how the landscape is changing.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="mammal">
-      <!-- 📷 PHOTO: Coyote — replace src with your own image path -->
-      <div class="species-photo"><img src="Wildlife/Coyote.jpg" alt="Coyote" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Mammal</div>
-        <h4>Coyote</h4><p class="latin">Canis latrans</p>
-        <p>Regularly captured on trail camera crossing the north field edge. Their presence keeps rabbit and rodent populations balanced — essential for natural grassland regeneration on the old pasture areas.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="mammal">
-      <!-- 📷 PHOTO: American Beaver — replace src with your own image path -->
-      <div class="species-photo"><img src="Wildlife/Beaver.jpg" alt="American Beaver" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Mammal</div>
-        <h4>American Beaver</h4><p class="latin">Castor canadensis</p>
-        <p>Chewed stumps and dam activity visible along the stream corridor downstream of the property boundary. Their natural engineering widens and deepens the channel we're working to restore — useful allies.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="mammal">
-      <!-- 📷 PHOTO: Raccoon — replace src with your own image path -->
-      <div class="species-photo"><img src="Wildlife/Racoon.jpg" alt="Raccoon" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Mammal</div>
-        <h4>Raccoon</h4><p class="latin">Procyon lotor</p>
-        <p>Common along the stream corridor and around the barn at night. Their digging at pond margins can disturb turtle nests — something we keep an eye on near the Blanding's turtle sighting area.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="bird">
-      <!-- 📷 PHOTO: Barn Swallow — replace src with your own image path -->
-      <div class="species-photo"><img src="Wildlife/Barn_Swallow.jpg" alt="Barn Swallow" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-at-risk"></span>Bird · Threatened</div>
-        <h4>Barn Swallow</h4><p class="latin">Hirundo rustica</p>
-        <p>Nesting in the barn — the primary reason it's staying standing. At least two active nests confirmed last season. Loft access gaps are maintained deliberately as part of the heritage structure stewardship work.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="bird">
-      <!-- 📷 PHOTO: Wild Turkey — replace src with your own image path -->
-      <div class="species-photo"><img src="Wildlife/Wild-Turkeys.jpg" alt="Wild Turkey" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Bird</div>
-        <h4>Wild Turkey</h4><p class="latin">Meleagris gallopavo</p>
-        <p>A flock of 8–12 crosses the south field most mornings. Their scratching through leaf litter at the woodlot edge loosens soil and helps native seed work its way in — free tillage.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="bird">
-      <!-- 📷 PHOTO: Ruffed Grouse — replace src with your own image path -->
-      <div class="species-photo"><img src="Wildlife/Ruffed_Grouse.jpg" alt="Ruffed Grouse" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Bird</div>
-        <h4>Ruffed Grouse</h4><p class="latin">Bonasa umbellus</p>
-        <p>Drumming heard from the woodlot edge every spring. A species that thrives in exactly the kind of brushy, early-successional habitat that's forming naturally on the unmowed margins of both properties.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="bird">
-      <!-- 📷 PHOTO: Cooper's Hawk — replace src with your own image path -->
-      <div class="species-photo"><img src="Wildlife/Coopers Hawk.jpg" alt="Cooper's Hawk" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Bird</div>
-        <h4>Cooper's Hawk</h4><p class="latin">Accipiter cooperii</p>
-        <p>Hunts the woodlot edge and open fields year-round. One of the more dramatic regular sightings on the properties — often flushing the turkey flock from the south field on morning passes.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="fish">
-      <!-- 📷 PHOTO: Brook Trout — replace src with your own image path -->
-      <div class="species-photo"><img src="Wildlife/Brook Trout.jpg" alt="Brook Trout" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-at-risk"></span>Fish · Species of Concern</div>
-        <h4>Brook Trout</h4><p class="latin">Salvelinus fontinalis</p>
-        <p>Present in the upper stream reach where summer water temperatures stay cold enough. A living benchmark for the stream revival work — if the riparian planting and channel restoration succeed, their range on the property should expand.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="amphibian">
-      <!-- 📷 PHOTO: Spring Peeper — replace src with your own image path -->
-      <div class="species-photo"><img src="Wildlife/Spring Peeper.jpg" alt="Spring Peeper" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Amphibian</div>
-        <h4>Spring Peeper</h4><p class="latin">Pseudacris crucifer</p>
-        <p>The pond at the south property edge becomes deafening in April. We track chorus intensity each spring informally — a simple measure of whether the wetland is getting healthier from one year to the next.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="amphibian">
-      <!-- 📷 PHOTO: American Bullfrog — replace src with your own image path -->
-      <div class="species-photo"><img src="Wildlife/Bullfrog.jpg" alt="American Bullfrog" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Amphibian</div>
-        <h4>American Bullfrog</h4><p class="latin">Lithobates catesbeianus</p>
-        <p>Common in the pond and along stream margins. Their deep bass calls overlap with the peepers each spring. A prey source for herons, raccoons, and large snakes throughout the warmer months.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="reptile">
-      <!-- 📷 PHOTO: Eastern Garter Snake — replace src with your own image path -->
-      <div class="species-photo"><img src="Wildlife/Garter.jpg" alt="Eastern Garter Snake" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Reptile</div>
-        <h4>Eastern Garter Snake</h4><p class="latin">Thamnophis sirtalis sirtalis</p>
-        <p>Abundant — in the stone wall remnants, under debris piles, along the stream bank. Removing one of the old fence rows uncovered a small communal basking spot we've since left undisturbed.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="reptile">
-      <!-- 📷 PHOTO: Blanding's Turtle — replace src with your own image path -->
-      <div class="species-photo"><img src="Wildlife/Blandings Turtle.jpg" alt="Blanding's Turtle" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-at-risk"></span>Reptile · Threatened</div>
-        <h4>Blanding's Turtle</h4><p class="latin">Emydoidea blandingii</p>
-        <p>One individual confirmed at the pond edge in June — a significant find. Threatened in Ontario and very slow to recover from losses. The pond margin here appears to be suitable nesting habitat; raccoon activity in that area is being watched closely.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="insect">
-      <!-- 📷 PHOTO: Monarch Butterfly — replace src with your own image path -->
-      <div class="species-photo"><img src="Wildlife/Monarch.jpg" alt="Monarch Butterfly" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-at-risk"></span>Insect · Endangered</div>
-        <h4>Monarch Butterfly</h4><p class="latin">Danaus plexippus</p>
-        <p>Seen reliably in late summer on the milkweed along the old fence line — one of our reasons for leaving that margin unmowed. Expanding milkweed into the south field is a direct priority in the native species work.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="insect">
-      <!-- 📷 PHOTO: Bumble Bee — replace src with your own image path -->
-      <div class="species-photo"><img src="Wildlife/Bumblebee.jpg" alt="Bumble Bee" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Insect</div>
-        <h4>Bumble Bees</h4><p class="latin">Bombus spp.</p>
-        <p>Multiple species foraging across both properties through the season. Ground-nesting populations benefit directly from the areas we've stopped mowing — an easy win that costs nothing.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ══ PLANTS ══ -->
-<section id="plants" class="section">
-  <div class="section-header">
-    <div class="section-number">🌳</div>
-    <div class="section-title-block">
-      <h2><span class="title-emoji">🌳</span>Plants on the<br>Properties</h2>
-      <p>Native trees, shrubs, wildflowers, and ferns documented on or planted across the two Ravenna properties. Invasive species are flagged — removal is ongoing every season.</p>
-    
-
-  <div class="filter-bar">
-    <button class="filter-btn active" onclick="filterSpecies('all',this)">All</button>
-    <button class="filter-btn" onclick="filterSpecies('tree',this)">Trees</button>
-    <button class="filter-btn" onclick="filterSpecies('shrub',this)">Shrubs</button>
-    <button class="filter-btn" onclick="filterSpecies('wildflower',this)">Wildflowers</button>
-    <button class="filter-btn" onclick="filterSpecies('fern',this)">Ferns</button>
-    <button class="filter-btn" onclick="filterSpecies('invasive-plant',this)">⚠ Invasive</button>
-  </div>
-
-  <div class="species-legend">
-    <div class="legend-item"><span class="legend-dot dot-common"></span>Common — established on property</div>
-    <div class="legend-item"><span class="legend-dot dot-at-risk"></span>At Risk — provincially or federally listed</div>
-    <div class="legend-item"><span class="legend-dot dot-rare"></span>Rare — single or very few individuals</div>
-    <div class="legend-item"><span class="legend-dot dot-invasive"></span>Invasive — active removal underway</div>
-  </div>
-
-  <div class="species-grid" id="plants-grid">
-
-    <div class="species-card" data-type="tree">
-      <!-- 📷 PHOTO: Sugar Maple — replace src with your own image path -->
-      <div class="species-photo"><img src="Plants/Sugar_Maple.webp" alt="Sugar Maple" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Tree</div>
-        <h4>Sugar Maple</h4><p class="latin">Acer saccharum</p>
-        <p>Dominant in the existing woodlot. One hundred seedlings planted at the forest edge this season — extending the woodlot into the field rather than creating isolated plantings out in the open.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="tree">
-      <!-- 📷 PHOTO: Eastern White Cedar — replace src with your own image path -->
-      <div class="species-photo"><img src="Plants/WhiteCedar.jpg" alt="Eastern White Cedar" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Tree</div>
-        <h4>Eastern White Cedar</h4><p class="latin">Thuja occidentalis</p>
-        <p>Scattered naturally along the stream corridor and north-facing slope. Year-round thermal cover for deer and nesting birds. We're adding nursery-grown seedlings along the stream riparian buffer planting.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="tree">
-      <!-- 📷 PHOTO: Trembling Aspen — replace src with your own image path -->
-      <div class="species-photo"><img src="Plants/Aspen.webp" alt="Trembling Aspen" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Tree</div>
-        <h4>Trembling Aspen</h4><p class="latin">Populus tremuloides</p>
-        <p>Already colonizing the field corners on its own — exactly what we want. One of the most ecologically valuable early-successional trees for insects and birds. We're leaving every volunteer completely alone.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="tree">
-      <!-- 📷 PHOTO: Butternut — replace src with your own image path -->
-      <div class="species-photo"><img src="Plants/Butternut.jpg" alt="Butternut" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-at-risk"></span>Tree · Endangered</div>
-        <h4>Butternut</h4><p class="latin">Juglans cinerea</p>
-        <p>Two existing individuals on the property — both healthy, which is increasingly rare. Provincially protected. We're planting disease-resistant seedlings from a certified Escarpment-region source to expand the population on site.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="tree">
-      <!-- 📷 PHOTO: Yellow Birch — replace src with your own image path -->
-      <div class="species-photo"><img src="Plants/Yellow_Birch.jpg" alt="Yellow Birch" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Tree</div>
-        <h4>Yellow Birch</h4><p class="latin">Betula alleghaniensis</p>
-        <p>Several mature individuals at the woodlot centre, distinguished by their peeling golden bark. A long-lived component of the forest here. Seeds carry finches and siskins through the winter months.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="shrub">
-      <!-- 📷 PHOTO: Red-osier Dogwood — replace src with your own image path -->
-      <div class="species-photo"><img src="Plants/Red_Osier.jpg" alt="Red-osier Dogwood" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Shrub</div>
-        <h4>Red-osier Dogwood</h4><p class="latin">Cornus sericea</p>
-        <p>Already established along the stream bank — brilliant red stems through all winter. A top choice for stream bank stabilization planting; berries feed migrating birds heavily in late summer.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="shrub">
-      <!-- 📷 PHOTO: Common Elderberry — replace src with your own image path -->
-      <div class="species-photo"><img src="Plants/Elderberry.jpg" alt="Common Elderberry" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Shrub</div>
-        <h4>Common Elderberry</h4><p class="latin">Sambucus canadensis</p>
-        <p>Naturalized along the ditch margin. Berries consumed by over 50 bird species — one of the highest-wildlife-value shrubs native to this region. We're propagating cuttings to establish additional stands on the property.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="wildflower">
-      <!-- 📷 PHOTO: Common Milkweed — replace src with your own image path -->
-      <div class="species-photo"><img src="Plants/Milkweed.jpg" alt="Common Milkweed" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Wildflower</div>
-        <h4>Common Milkweed</h4><p class="latin">Asclepias syriaca</p>
-        <p>Growing along the unmowed fence line margins — preserved deliberately as the sole larval host plant for Monarch butterflies. We're seeding additional milkweed into the south field margins this season.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="wildflower">
-      <!-- 📷 PHOTO: Wild Columbine — replace src with your own image path -->
-      <div class="species-photo"><img src="Plants/Columbine.jpg" alt="Wild Columbine" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Wildflower</div>
-        <h4>Wild Columbine</h4><p class="latin">Aquilegia canadensis</p>
-        <p>Established on the rocky north-facing slope. The first significant nectar source of the year for hummingbirds returning from migration. Spreading on its own — no help needed here.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="wildflower">
-      <!-- 📷 PHOTO: Canada Goldenrod — replace src with your own image path -->
-      <div class="species-photo"><img src="Plants/GoldenRod.webp" alt="Canada Goldenrod" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Wildflower</div>
-        <h4>Canada Goldenrod</h4><p class="latin">Solidago canadensis</p>
-        <p>Filling the unmowed field margins brilliantly come September. Supports over 100 insect species and seeds finches through winter. Often mistakenly blamed for hay fever — that's ragweed, which flowers at the same time.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="fern">
-      <!-- 📷 PHOTO: Ostrich Fern — replace src with your own image path -->
-      <div class="species-photo"><img src="Plants/Ostrich Fern.webp" alt="Ostrich Fern" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-common"></span>Fern</div>
-        <h4>Ostrich Fern</h4><p class="latin">Matteuccia struthiopteris</p>
-        <p>Dense colonies at the shaded stream bank. Divisions are being transplanted upstream to stabilize bare eroded sections ahead of the more involved channel restoration work.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="invasive-plant">
-      <!-- 📷 PHOTO: Common Buckthorn (Invasive) — replace src with your own image path -->
-      <div class="species-photo"><img src="Plants/Buckthorn.jpg" alt="Common Buckthorn" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-invasive"></span>Invasive · Removal Ongoing</div>
-        <h4>Common Buckthorn</h4><p class="latin">Rhamnus cathartica</p>
-        <p>The primary invasive problem on both properties — particularly dense along the old hedgerows. Cut stumps are treated on the spot. Birds continuously reintroduce seed from neighbouring properties, so this is a permanent, multi-year commitment.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="invasive-plant">
-      <!-- 📷 PHOTO: Dog-strangling Vine (Invasive) — replace src with your own image path -->
-      <div class="species-photo"><img src="Plants/Dog Strangling.jpg" alt="Dog-strangling Vine" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-invasive"></span>Invasive · Removal Ongoing</div>
-        <h4>Dog-strangling Vine</h4><p class="latin">Vincetoxicum rossicum</p>
-        <p>A significant infestation along the south field margin. Particularly destructive because it lures Monarchs into laying eggs on it — where the caterpillars cannot survive. Hand-pulling every season before it sets seed.</p>
-      </div>
-    </div>
-
-    <div class="species-card" data-type="invasive-plant">
-      <!-- 📷 PHOTO: Garlic Mustard (Invasive) — replace src with your own image path -->
-      <div class="species-photo"><img src="Plants/Garlic Mustard.jpg" alt="Garlic Mustard" loading="lazy" onerror="this.parentElement.className='species-photo-placeholder';this.parentElement.innerHTML='<span class=ph-icon>📷</span>Add photo'"></div>
-      <div class="species-body">
-        <div class="species-type-tag"><span class="species-status status-invasive"></span>Invasive · Removal Ongoing</div>
-        <h4>Garlic Mustard</h4><p class="latin">Alliaria petiolata</p>
-        <p>Spreading through the woodlot understory. Releases chemicals that inhibit the mycorrhizal fungi native tree seedlings depend on. Early spring pulling before it sets seed is the most effective approach — and the timing is unforgiving.</p>
-      </div>
-    </div>
-
-  </div>
 </section>
 
 <!-- ══ PROJECTS ══ -->
 <section id="projects" class="section">
+
   <div class="section-header">
     <div class="section-number">🛠</div>
     <div class="section-title-block">
       <h2><span class="title-emoji">🛠</span>On the Ground</h2>
-      <p>Active restoration work across two properties near Ravenna, Ontario. Each property has its own character, its own pressures, and its own set of projects — but both are part of the same long-term vision.</p>
-    
-
-  <div style="height:2.5rem"></div>
-
-  <!-- MAXWELL PROPERTY -->
-  <div class="project-group open" id="group-maxwell">
-    <div class="project-group-header" onclick="toggleGroup('group-maxwell')">
-      <div>
-        <div class="project-group-title">🌊 The Maxwell Project</div>
-        <div class="project-group-meta">Maxwell, Ontario · Stream corridor · Mixed forest & open field · Year 2</div>
-      </div>
-      <div class="project-group-toggle">▼</div>
+      <p>Active restoration work across two properties near Ravenna, Ontario. Wildlife confirmed on each property is woven into the work — each project shaped by what's already living there.</p>
     </div>
-    <div class="project-group-body">
+  </div>
 
-      <div class="sub-project">
-        <div class="sub-num">🌊</div>
-        <div class="sub-body">
-          <h4>Stream Revival</h4>
-          <p>The drainage ditch cutting through the Maxwell Property was straightened decades ago for field drainage — too shallow, too fast, and too warm for the brook trout that survive only in the coldest upper reach. Work involves removing a failed culvert blocking fish passage, adding woody debris and root structure to deepen pools, and planting a 50-metre riparian buffer of cedar, dogwood, and ostrich fern along eroded banks. No machinery — everything by hand over multiple seasons.</p>
+  <!-- ── BROOKDALE FARM ── -->
+  <div class="prop-section">
+    <div class="prop-label">
+      <div class="prop-tag">Maxwell, Ontario</div>
+      <h3 class="prop-name">🌾 Brookdale Farm</h3>
+      <p class="prop-meta">Stream corridor · Mixed forest &amp; open field · Year 2</p>
+    </div>
+
+    <div class="proj-card-grid">
+
+      <div class="proj-card">
+        <div class="proj-card-photo">
+          <img src="IMG_0089.jpeg" alt="" onerror="this.style.display='none'">
+          <div class="proj-card-photo-fallback">🌊</div>
+          <span class="proj-status-badge status-active">Active</span>
         </div>
-        <div class="sub-meta">
-          <span class="project-status status-active">Active</span>
-          <div class="project-acres">~200m reach</div>
+        <div class="proj-card-body">
+          <div class="proj-card-meta">~200m reach</div>
+          <h4 class="proj-card-title">Stream Revival</h4>
+          <p class="proj-card-desc">The drainage ditch was straightened decades ago — too shallow, too fast, and too warm for brook trout. We're removing a failed culvert, adding woody debris to deepen pools, and planting a riparian buffer of cedar, dogwood, and ostrich fern. No machinery — everything by hand.</p>
+          <div class="proj-species-strip">
+            <span class="proj-species-chip">🐟 Brook Trout</span>
+            <span class="proj-species-chip">🐸 Spring Peeper</span>
+            <span class="proj-species-chip">🌿 Ostrich Fern</span>
+            <span class="proj-species-chip">🦫 Beaver</span>
+          </div>
         </div>
       </div>
 
-      <div class="sub-project">
-        <div class="sub-num">🌱</div>
-        <div class="sub-body">
-          <h4>Reintroducing Native Species</h4>
-          <p>Native tree seedlings — sugar maple, white cedar, butternut, trembling aspen, yellow birch — planted at the woodland edges following existing forest contours rather than in rows. Milkweed and goldenrod seeded into unmowed field margins. The goal is extension of existing woodland, not isolated plantation plantings.</p>
+      <div class="proj-card">
+        <div class="proj-card-photo">
+          <img src="Expansion.jpeg" alt="" onerror="this.style.display='none'">
+          <div class="proj-card-photo-fallback">🪧</div>
+          <span class="proj-status-badge status-active">Active</span>
         </div>
-        <div class="sub-meta">
-          <span class="project-status status-active">Active</span>
-          <div class="project-acres">Multiple sites</div>
-        </div>
-      </div>
-
-      <div class="sub-project">
-        <div class="sub-num">🪲</div>
-        <div class="sub-body">
-          <h4>Invasive Species Removal</h4>
-          <p>Common buckthorn, garlic mustard, and dog-strangling vine are all present on the Maxwell Property and actively being removed. Cut stumps treated on site. Dog-strangling vine hand-pulled each spring before seed set. This is a permanent, multi-year commitment — seed rain from neighbouring properties means it never fully stops.</p>
-        </div>
-        <div class="sub-meta">
-          <span class="project-status status-active">Active</span>
-          <div class="project-acres">Ongoing</div>
+        <div class="proj-card-body">
+          <div class="proj-card-meta">Field perimeter</div>
+          <h4 class="proj-card-title">Fence Row Widening</h4>
+          <p class="proj-card-desc">Extending the property's protected perimeter to include more edge habitat — hedgerow, scrub, and transitional woodland. Fence line corridors are disproportionately important for small mammals, pollinators, and nesting birds moving through agricultural landscapes.</p>
+          <div class="proj-species-strip">
+            <span class="proj-species-chip">🦔 Small Mammals</span>
+            <span class="proj-species-chip">🐝 Bumble Bee</span>
+            <span class="proj-species-chip">🌾 Canada Goldenrod</span>
+          </div>
         </div>
       </div>
 
-      <div class="sub-project">
-        <div class="sub-num">🦫</div>
-        <div class="sub-body">
-          <h4>Beaver Collaboration</h4>
-          <p>Beaver activity documented downstream of the property boundary is doing useful work — naturally deepening and widening the stream corridor we're trying to restore. Rather than managing around them, we're working to understand and complement their engineering. Monitoring dam placement and water table impacts through the seasons.</p>
+      <div class="proj-card">
+        <div class="proj-card-photo">
+          <img src="Hugkulture2.jpeg" alt="" onerror="this.style.display='none'">
+          <div class="proj-card-photo-fallback">🪵</div>
+          <span class="proj-status-badge status-active">Active</span>
         </div>
-        <div class="sub-meta">
-          <span class="project-status status-planning">Monitoring</span>
-          <div class="project-acres">Stream corridor</div>
+        <div class="proj-card-body">
+          <div class="proj-card-meta">Multiple beds</div>
+          <h4 class="proj-card-title">Hügelkultur</h4>
+          <p class="proj-card-desc">Mounded garden beds built from buried logs, branches, and woody debris — a traditional technique that builds soil fertility over many years as the wood slowly decomposes. Reduces watering needs, improves drainage, and creates habitat for soil invertebrates and small mammals.</p>
+          <div class="proj-species-strip">
+            <span class="proj-species-chip">🪱 Earthworms</span>
+            <span class="proj-species-chip">🍄 Fungi</span>
+            <span class="proj-species-chip">🌱 Native Plantings</span>
+          </div>
         </div>
       </div>
 
-      <div class="sub-project">
-        <div class="sub-num">📋</div>
-        <div class="sub-body">
-          <h4>Biodiversity Baseline Survey</h4>
-          <p>Building a rigorous species inventory for the Maxwell Property using iNaturalist, trail cameras, and seasonal amphibian egg mass counts. Without a documented baseline, it's impossible to measure recovery. Every trail camera capture and plant identification contributes to a picture that will matter more in ten years than it does today.</p>
+      <div class="proj-card">
+        <div class="bio-mosaic" id="bio-brookdale">
+          <div class="bio-mosaic-label">Species on Property</div>
+          <div class="bio-mosaic-grid">
+<div class="bio-chip">🦌 White-tailed Deer</div>
+<div class="bio-chip">🦊 Coyote</div>
+<div class="bio-chip">🦫 American Beaver</div>
+<div class="bio-chip">🦝 Raccoon</div>
+<div class="bio-chip bio-chip-atrisk">🐦 Barn Swallow</div>
+<div class="bio-chip">🦚 Wild Turkey</div>
+<div class="bio-chip">🦤 Ruffed Grouse</div>
+<div class="bio-chip">🦅 Cooper's Hawk</div>
+<div class="bio-chip">🐟 Brook Trout</div>
+<div class="bio-chip">🐸 Spring Peeper</div>
+<div class="bio-chip">🐸 American Bullfrog</div>
+<div class="bio-chip">🐍 Eastern Garter Snake</div>
+<div class="bio-chip bio-chip-atrisk">🐢 Blanding's Turtle</div>
+<div class="bio-chip">🦋 Monarch Butterfly</div>
+<div class="bio-chip">🐝 Bumble Bees</div>
+<div class="bio-chip bio-chip-plant">🍁 Sugar Maple</div>
+<div class="bio-chip bio-chip-plant">🌲 Eastern White Cedar</div>
+<div class="bio-chip bio-chip-plant">🌿 Trembling Aspen</div>
+<div class="bio-chip bio-chip-plant">🌰 Butternut</div>
+<div class="bio-chip bio-chip-plant">🍂 Yellow Birch</div>
+<div class="bio-chip bio-chip-plant">🌿 Red-osier Dogwood</div>
+<div class="bio-chip bio-chip-plant">🌿 Common Elderberry</div>
+<div class="bio-chip bio-chip-plant">🌾 Common Milkweed</div>
+<div class="bio-chip bio-chip-plant">🌸 Wild Columbine</div>
+<div class="bio-chip bio-chip-plant">🌼 Canada Goldenrod</div>
+<div class="bio-chip bio-chip-plant">🌿 Ostrich Fern</div>
+<div class="bio-chip bio-chip-inv">⚠️ Common Buckthorn</div>
+<div class="bio-chip bio-chip-inv">⚠️ Dog-strangling Vine</div>
+<div class="bio-chip bio-chip-inv">⚠️ Garlic Mustard</div>
+          </div>
         </div>
-        <div class="sub-meta">
-          <span class="project-status status-active">Active</span>
-          <div class="project-acres">Whole property</div>
+        <div class="proj-card-body">
+          <div class="proj-card-meta">Whole property</div>
+          <h4 class="proj-card-title">Biodiversity Baseline Survey</h4>
+          <p class="proj-card-desc">Building a rigorous species inventory using iNaturalist, trail cameras, and seasonal amphibian egg mass counts. Without a documented baseline, it's impossible to measure recovery. Every capture and identification contributes to a picture that will matter more in ten years than today.</p>
+          <div class="proj-species-strip">
+            <span class="proj-species-chip">🦌 White-tailed Deer</span>
+            <span class="proj-species-chip">🦅 Cooper's Hawk</span>
+            <span class="proj-species-chip">🐍 Eastern Garter Snake</span>
+            <span class="proj-species-chip">🐸 American Bullfrog</span>
+          </div>
         </div>
       </div>
 
     </div>
   </div>
 
-  <!-- RAVENNA PROPERTY -->
-  <div class="project-group open" id="group-ravenna">
-    <div class="project-group-header" onclick="toggleGroup('group-ravenna')">
-      <div>
-        <div class="project-group-title">🏚 The Ravenna Project</div>
-        <div class="project-group-meta">Ravenna, Ontario · Heritage barn · Hedgerow & field mosaic · Year 2</div>
-      </div>
-      <div class="project-group-toggle">▼</div>
+  <!-- ── SWALLOWFIELD ── -->
+  <div class="prop-section">
+    <div class="prop-label">
+      <div class="prop-tag">Ravenna, Ontario</div>
+      <h3 class="prop-name">🐦 Swallowfield Farm</h3>
+      <p class="prop-meta">Heritage barn · Hedgerow &amp; field mosaic · Year 2</p>
     </div>
-    <div class="project-group-body">
 
-      <div class="sub-project">
-        <div class="sub-num">🪧</div>
-        <div class="sub-body">
-          <h4>De-Fencing</h4>
-          <p>Agricultural wire fencing that hasn't held livestock in years cuts across the field edge, through the woodlot, and across what was once continuous hedgerow. We're pulling all 10km of it — removing staples and wire by hand, rolling and salvaging the material, leaving posts as habitat structure where they're not rotted through. Once the wire comes out, movement restores itself.</p>
+    <div class="proj-card-grid">
+
+      <div class="proj-card">
+        <div class="proj-card-photo">
+          <img src="IMG_9423.jpeg" alt="" onerror="this.style.display='none'">
+          <div class="proj-card-photo-fallback">🪧</div>
+          <span class="proj-status-badge status-active">Active</span>
         </div>
-        <div class="sub-meta">
-          <span class="project-status status-active">Active</span>
-          <div class="project-acres">10km total</div>
+        <div class="proj-card-body">
+          <div class="proj-card-meta">2.5km total</div>
+          <h4 class="proj-card-title">De-Fencing</h4>
+          <p class="proj-card-desc">Agricultural wire that hasn't held livestock in years cuts across field edges, through the woodlot, and across continuous hedgerow. We're pulling all 2.5km by hand — leaving posts as habitat structure where they're not rotted. Once the wire comes out, movement restores itself.</p>
+          <div class="proj-species-strip">
+            <span class="proj-species-chip at-risk">⚡ Blanding's Turtle</span>
+            <span class="proj-species-chip">🦌 White-tailed Deer</span>
+            <span class="proj-species-chip">🦝 Raccoon</span>
+          </div>
         </div>
       </div>
 
-      <div class="sub-project">
-        <div class="sub-num">🏚</div>
-        <div class="sub-body">
-          <h4>Heritage Structure Stewardship</h4>
-          <p>The barn on the Ravenna Property has active barn swallow nests in the loft and bat colonies in the wall gaps — species in real decline across Ontario. The approach is targeted stabilization only: reinforcing the frame where it's failing, maintaining or opening specific access points for swallows and bats, and leaving the building's character intact. George also hosts occasional community and conservation meetings in the barn, continuing its life as a gathering place.</p>
+      <div class="proj-card">
+        <div class="proj-card-photo">
+          <img src="BarnRepair.jpg" alt="" onerror="this.style.display='none'">
+          <div class="proj-card-photo-fallback">🏚</div>
+          <span class="proj-status-badge status-active">Active</span>
         </div>
-        <div class="sub-meta">
-          <span class="project-status status-planning">Planning</span>
-          <div class="project-acres">Ravenna barn</div>
-        </div>
-      </div>
-
-      <div class="sub-project">
-        <div class="sub-num">🌱</div>
-        <div class="sub-body">
-          <h4>Reintroducing Native Species</h4>
-          <p>Milkweed seeded into south field margins to support Monarch butterfly populations. Elderberry and red-osier dogwood cuttings propagated from existing property stock and planted along hedgerow margins. Native wildflower mixes seeded into areas where mowing has been discontinued. No off-property inputs — everything sourced or propagated on site.</p>
-        </div>
-        <div class="sub-meta">
-          <span class="project-status status-active">Active</span>
-          <div class="project-acres">Field margins</div>
+        <div class="proj-card-body">
+          <div class="proj-card-meta">Ravenna barn</div>
+          <h4 class="proj-card-title">Heritage Structure Stewardship</h4>
+          <p class="proj-card-desc">The barn is being selectively stabilised — reinforcing the frame where it's failing, preserving access points for nesting species, and leaving its character intact. Targeted intervention only: the goal is to keep the structure standing without disturbing the life it already shelters.</p>
+          <div class="proj-species-strip">
+            <span class="proj-species-chip at-risk">⚡ Barn Swallow</span>
+            <span class="proj-species-chip">🦇 Bat Colonies</span>
+          </div>
         </div>
       </div>
 
-      <div class="sub-project">
-        <div class="sub-num">📷</div>
-        <div class="sub-body">
-          <h4>Documenting What's Here</h4>
-          <p>Trail cameras placed at the fence removal sites and woodland edges are capturing the first systematic wildlife record for the Ravenna Property. One Blanding's Turtle confirmed at the pond margin — a significant find for a threatened species. All sightings logged to iNaturalist. This documentation will anchor the restoration case for years to come.</p>
+      <div class="proj-card">
+        <div class="proj-card-photo">
+          <img src="Wildflowers.jpeg" alt="" onerror="this.style.display='none'">
+          <div class="proj-card-photo-fallback">🌱</div>
+          <span class="proj-status-badge status-active">Active</span>
         </div>
-        <div class="sub-meta">
-          <span class="project-status status-active">Active</span>
-          <div class="project-acres">Whole property</div>
-        </div>
-      </div>
-
-      <div class="sub-project">
-        <div class="sub-num">♻️</div>
-        <div class="sub-body">
-          <h4>Reuse Over Replace</h4>
-          <p>Fence posts pulled from de-fencing are stacked into brush piles and habitat structures rather than removed. Stone moved during restoration becomes reptile basking structures. Invasive shrubs cleared from hedgerows become nurse cover for native seedlings planted in their place. Nothing leaves the property if it can serve a purpose here.</p>
-        </div>
-        <div class="sub-meta">
-          <span class="project-status status-active">Active</span>
-          <div class="project-acres">Ongoing</div>
+        <div class="proj-card-body">
+          <div class="proj-card-meta">Field margins</div>
+          <h4 class="proj-card-title">Native Species Reintroduction</h4>
+          <p class="proj-card-desc">Milkweed seeded into south field margins for Monarchs. Elderberry and red-osier dogwood propagated from existing property stock. Native wildflower mixes seeded into areas where mowing has been discontinued — no off-property inputs, everything sourced on site.</p>
+          <div class="proj-species-strip">
+            <span class="proj-species-chip">🦋 Monarch Butterfly</span>
+            <span class="proj-species-chip">🌿 Common Elderberry</span>
+            <span class="proj-species-chip">🌸 Wild Columbine</span>
+          </div>
         </div>
       </div>
 
-      <div class="sub-project">
-        <div class="sub-num">🤝</div>
-        <div class="sub-body">
-          <h4>Escarpment Corridor Community Outreach</h4>
-          <p>The Ravenna Property sits within an important segment of the Niagara Escarpment wildlife corridor. George, as a member of the Escarpment Corridor Alliance, is beginning conversations with adjacent landowners about coordinated de-fencing and habitat management — the first step toward a connected corridor that no single property can achieve alone.</p>
+      <div class="proj-card">
+        <div class="bio-mosaic" id="bio-swallow">
+          <div class="bio-mosaic-label">Species on Property</div>
+          <div class="bio-mosaic-grid">
+<div class="bio-chip">🦌 White-tailed Deer</div>
+<div class="bio-chip">🦊 Coyote</div>
+<div class="bio-chip">🦫 American Beaver</div>
+<div class="bio-chip">🦝 Raccoon</div>
+<div class="bio-chip bio-chip-atrisk">🐦 Barn Swallow</div>
+<div class="bio-chip">🦚 Wild Turkey</div>
+<div class="bio-chip">🦤 Ruffed Grouse</div>
+<div class="bio-chip">🦅 Cooper's Hawk</div>
+<div class="bio-chip">🐟 Brook Trout</div>
+<div class="bio-chip">🐸 Spring Peeper</div>
+<div class="bio-chip">🐸 American Bullfrog</div>
+<div class="bio-chip">🐍 Eastern Garter Snake</div>
+<div class="bio-chip bio-chip-atrisk">🐢 Blanding's Turtle</div>
+<div class="bio-chip">🦋 Monarch Butterfly</div>
+<div class="bio-chip">🐝 Bumble Bees</div>
+<div class="bio-chip bio-chip-plant">🍁 Sugar Maple</div>
+<div class="bio-chip bio-chip-plant">🌲 Eastern White Cedar</div>
+<div class="bio-chip bio-chip-plant">🌿 Trembling Aspen</div>
+<div class="bio-chip bio-chip-plant">🌰 Butternut</div>
+<div class="bio-chip bio-chip-plant">🍂 Yellow Birch</div>
+<div class="bio-chip bio-chip-plant">🌿 Red-osier Dogwood</div>
+<div class="bio-chip bio-chip-plant">🌿 Common Elderberry</div>
+<div class="bio-chip bio-chip-plant">🌾 Common Milkweed</div>
+<div class="bio-chip bio-chip-plant">🌸 Wild Columbine</div>
+<div class="bio-chip bio-chip-plant">🌼 Canada Goldenrod</div>
+<div class="bio-chip bio-chip-plant">🌿 Ostrich Fern</div>
+<div class="bio-chip bio-chip-inv">⚠️ Common Buckthorn</div>
+<div class="bio-chip bio-chip-inv">⚠️ Dog-strangling Vine</div>
+<div class="bio-chip bio-chip-inv">⚠️ Garlic Mustard</div>
+          </div>
         </div>
-        <div class="sub-meta">
-          <span class="project-status status-planning">Aspirational</span>
-          <div class="project-acres">Corridor scale</div>
+        <div class="proj-card-body">
+          <div class="proj-card-meta">Whole property</div>
+          <h4 class="proj-card-title">Biodiversity Baseline Survey</h4>
+          <p class="proj-card-desc">Trail cameras at fence removal sites and woodland edges are building the first systematic wildlife record for Swallowstorn Farm. One Blanding's Turtle confirmed at the pond margin — a significant find for a threatened species. All sightings logged to iNaturalist.</p>
+          <div class="proj-species-strip">
+            <span class="proj-species-chip at-risk">⚡ Blanding's Turtle</span>
+            <span class="proj-species-chip">🦚 Wild Turkey</span>
+            <span class="proj-species-chip">🦅 Ruffed Grouse</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-card-photo">
+          <img src="Regenerative.jpeg" alt="" onerror="this.style.display='none'">
+          <div class="proj-card-photo-fallback">🌾</div>
+          <span class="proj-status-badge status-active">Active</span>
+        </div>
+        <div class="proj-card-body">
+          <div class="proj-card-meta">Field areas</div>
+          <h4 class="proj-card-title">Regenerative Farming</h4>
+          <p class="proj-card-desc">Transitioning farmed portions of the property toward regenerative practices — reducing tillage, building soil organic matter, and integrating cover crops and native perennials along field margins. The goal is a farm that produces food and habitat simultaneously.</p>
+          <div class="proj-species-strip">
+            <span class="proj-species-chip">🌼 Canada Goldenrod</span>
+            <span class="proj-species-chip">🐝 Bumble Bee</span>
+            <span class="proj-species-chip">🪱 Soil Invertebrates</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-card-photo">
+          <img src="BarnSwallow.jpg" alt="" onerror="this.style.display='none'">
+          <div class="proj-card-photo-fallback">🐦</div>
+          <span class="proj-status-badge status-active">Active</span>
+        </div>
+        <div class="proj-card-body">
+          <div class="proj-card-meta">Barn &amp; outbuildings</div>
+          <h4 class="proj-card-title">Barn Swallow Protection</h4>
+          <p class="proj-card-desc">Barn Swallows are a threatened species in Ontario, with populations declining steeply across the province due to habitat loss. Swallowfield's barn hosts active nesting colonies each season. We maintain open access points, avoid disturbance during nesting, and monitor nest counts annually to track population health.</p>
+          <div class="proj-species-strip">
+            <span class="proj-species-chip at-risk">⚡ Barn Swallow</span>
+            <span class="proj-species-chip">🪲 Flying Insects (food source)</span>
+          </div>
         </div>
       </div>
 
     </div>
   </div>
 
-</section>
-
-<!-- ══ GALLERY ══ -->
-<section id="gallery" class="section">
-  <div class="section-header">
-    <div class="section-number">📷</div>
-    <div class="section-title-block">
-      <h2><span class="title-emoji">📷</span>From the Properties</h2>
-      <p>Photos from the two Ravenna properties — seasonal change, project progress, and species sightings. Replace the placeholders with your own images.</p>
-    
-
-  <p class="gallery-intro">Drop your own photos into the placeholder cells below — trail camera captures, project progress, species documentation. Each cell holds one image with a label.</p>
-
-  <div class="gallery-grid">
-    <div class="gallery-cell"><img src="BigMaple.jpeg" alt="Big Maple"/></div>
-    <div class="gallery-cell"><img src="BarnRepair.jpg" alt="Barn Repair"/></div>
-    <div class="gallery-cell"><img src="RedSky.jpeg" alt="Red Sky"/></div>
-    <div class="gallery-cell"><img src="IMG_0089.jpeg" alt="Property"/></div>
-    <div class="gallery-cell"><img src="IMG_9423.jpeg" alt="On the Land"/></div>
-    <div class="gallery-cell"><img src="Wildflowers.jpeg" alt="Wildflowers"/></div>
-    <div class="gallery-cell"><div class="gallery-cell-inner"><span class="ph-icon">📹</span><div class="gallery-cell-label">Trail Camera</div></div></div>
-    <div class="gallery-cell"><div class="gallery-cell-inner"><span class="ph-icon">🦋</span><div class="gallery-cell-label">Monarchs on Milkweed</div></div></div>
-    <div class="gallery-cell"><div class="gallery-cell-inner"><span class="ph-icon">❄️</span><div class="gallery-cell-label">Winter on the Land</div></div></div>
-  </div>
 </section>
 
 <!-- ══ CONNECT ══ -->
@@ -1286,8 +970,8 @@
       <div class="rewild-global-text">
         <div class="global-eyebrow">🌍 Rewilding Worldwide</div>
         <h3 class="global-h3">Part of a Larger Movement</h3>
-        <p>Rewilding is not a Canadian idea — it's a global one. Organisations across Europe, Africa, and the Americas are proving that when land is given space to recover, nature responds with remarkable speed. We draw inspiration from that work, and we aim to embody the same spirit here on the Escarpment.</p>
-        <p>Rewilding Europe, founded in 2011, has been among the most influential voices globally — restoring large wild areas, reintroducing keystone species, and demonstrating what's possible when governments, landowners, and communities align. Their model of working <em>with</em> natural processes rather than against them is exactly what we're trying to practice, at our own scale, in Canada.</p>
+        <p style = "color: var(--cream)">Rewilding is not a Canadian idea — it's a global one. Organisations across Europe, Africa, and the Americas are proving that when land is given space to recover, nature responds with remarkable speed. We draw inspiration from that work, and we aim to embody the same spirit here on the Escarpment.</p>
+        <p style = "color: var(--cream)">Rewilding Europe, founded in 2011, has been among the most influential voices globally — restoring large wild areas, reintroducing keystone species, and demonstrating what's possible when governments, landowners, and communities align. Their model of working <em>with</em> natural processes rather than against them is exactly what we're trying to practice, at our own scale, in Canada.</p>
         <a href="https://rewildingeurope.com/" target="_blank" rel="noopener" class="global-link">
           <span>Rewilding Europe</span>
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
@@ -1346,17 +1030,14 @@
   </div>
   <div>
     <h4>Projects</h4>
-    <a href="#" onclick="showSection('projects',document.querySelectorAll('.nav-tabs a')[4]);return false;">The Maxwell Property (Maxwell, ON)</a>
-    <a href="#" onclick="showSection('projects',document.querySelectorAll('.nav-tabs a')[4]);return false;">The Ravenna Property</a>
+    <a href="#" onclick="showSection('projects',document.querySelectorAll('.nav-tabs a')[4]);return false;">Brookdale Farm (Maxwell, ON)</a>
+    <a href="#" onclick="showSection('projects',document.querySelectorAll('.nav-tabs a')[4]);return false;">Swallowfield Farm</a>
     <a href="#" onclick="showSection('rewilding',document.querySelectorAll('.nav-tabs a')[1]);return false;">What is Rewilding?</a>
-    <a href="#" onclick="showSection('wildlife',document.querySelectorAll('.nav-tabs a')[2]);return false;">Wildlife & Plants</a>
   </div>
   <div>
     <h4>Connect</h4>
     <a href="#" onclick="showSection('involve',document.querySelectorAll('.nav-tabs a')[6]);return false;">Send a Message</a>
     <a href="#">iNaturalist Profile</a>
-    <a href="#">Ontario Stewardship Program</a>
-    <a href="#">Escarpment Corridor Alliance</a>
   </div>
   <div class="footer-bottom">
     <p class="footer-brand">Rewilding Canada</p>
@@ -1370,22 +1051,13 @@
   const slideData = [
     { tag:'Niagara Escarpment · Ontario', headline:'Giving the Land<br>Back to Itself', desc:'Rewilding Canada restores wild landscapes one property at a time — removing fences, reviving streams, letting nature lead. Starting on the Escarpment. Growing from there.' },
     { tag:'Canadian Wildlife', headline:'Where Predator<br>Meets Prey Again', desc:'Healthy ecosystems need wolves, hawks, and beavers as much as they need trees. Rewilding reconnects the food chains that hold everything together.' },
-    { tag:'Old-Growth & Forest Recovery', headline:'Trees Planted Today,<br>Shade for Generations', desc:'12,500 native trees in the ground. Sugar maple, butternut, white cedar — extending existing woodland rather than planting isolated stands in open fields.' },
+    { tag:'Old-Growth & Forest Recovery', headline:'Trees Planted Today,<br>Shade for Generations', desc:'16,500 native trees in the ground. Sugar maple, butternut, white cedar — extending existing woodland rather than planting isolated stands in open fields.' },
     { tag:'Stream Revival', headline:'Letting the Water<br>Find Its Own Way', desc:'Straightened drainage ditches, buried culverts, eroded banks. Every stream restored is a salmon run reopened, a water table raised, a meadow re-created.' },
     { tag:'Rewilding Canada', headline:'Less Management,<br>More Trust', desc:'The most powerful conservation act is often simply to stop. To step back. To let what was always here find its way home. That is the work.' }
   ];
   let currentSlide = 0;
   let slideInterval;
 
-  function initSlideshow() {
-    const dotsEl = document.getElementById('slide-dots');
-    if (!dotsEl) return;
-    dotsEl.style.cssText = 'display:flex;gap:.5rem;align-items:center';
-    dotsEl.innerHTML = slideData.map((_,i) =>
-      `<button class="slide-dot${i===0?' active':''}" onclick="moveSlide(${i}-currentSlide)"></button>`
-    ).join('');
-    startAuto();
-  }
 
   function updateBlurb(idx) {
     const d = slideData[idx];
@@ -1413,30 +1085,22 @@
     document.getElementById(id).classList.add('active');
     if (link) link.classList.add('active');
     const hero = document.getElementById('hero');
+    const statBar = document.querySelector('.stat-bar');
     if (id === 'mission') {
       hero.style.display = '';
+      if (statBar) statBar.style.display = 'none';
     } else {
       hero.style.display = 'none';
+      if (statBar) statBar.style.display = '';
     }
     window.scrollTo({ top: 0, behavior: 'instant' });
   }
 
-  function toggleGroup(id) {
-    const group = document.getElementById(id);
-    group.classList.toggle('open');
-  }
+
 
   // init
-  document.addEventListener('DOMContentLoaded', initSlideshow);
-
-  function filterSpecies(type, btn) {
-    const sec = document.querySelector('.section.active');
-    sec.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    sec.querySelectorAll('.species-card').forEach(card => {
-      card.style.display = (type === 'all' || card.dataset.type === type) ? '' : 'none';
-    });
-  }
+  // About page: hide stat bar on load (mission is default active)
+  (function(){ const sb = document.querySelector('.stat-bar'); if(sb) sb.style.display='none'; })();
 
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => {

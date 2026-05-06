@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,7 +71,7 @@
   .slide-centre{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:10;padding:80px 6vw 0;text-align:center;flex-direction:column}
   .slide-tag{font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--lichen);margin-bottom:1.1rem}
   .slide-headline{font-family:'Playfair Display',serif;font-size:clamp(2.6rem,6vw,5.8rem);font-weight:900;color:#fff;line-height:.95;letter-spacing:-.025em;margin-bottom:1.4rem;text-shadow:0 3px 30px rgba(0,0,0,.5)}
-  .slide-desc{font-size:.98rem;color:rgba(255,255,255,.82);font-weight:300;line-height:1.75;max-width:580px;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+  .slide-desc{font-size:1.05rem;color:#fff;font-weight:400;line-height:1.75;max-width:600px;text-shadow:0 1px 12px rgba(0,0,0,.7);background:var(--deep-green);padding:.9rem 1.4rem;border-radius:2px;backdrop-filter:blur(2px)}
   .slide-cta{margin-top:2rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
   .slide-cta-btn{font-family:'DM Mono',monospace;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;padding:.85rem 2rem;text-decoration:none;cursor:pointer;transition:all .25s;border:none;display:inline-block}
   .slide-cta-btn.primary{background:var(--moss);color:#fff}
@@ -433,7 +431,7 @@
     .hero-stats{display:none}
     .slide-centre{padding:0 5vw}
     .slide-headline{font-size:clamp(1.4rem,6vw,2rem)}
-    .slide-desc{font-size:.82rem}
+    .slide-desc{font-size: 1rem}
     .slide-tag{font-size:.55rem}
     /* Nav tabs — horizontal scroll */
     .nav-tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
@@ -515,9 +513,8 @@
 
   <!-- CENTRE: Main headline + description per slide -->
   <div class="slide-centre">
-    <div class="slide-tag" id="slide-tag">Rewilding Canada</div>
-    <div class="slide-headline" id="slide-headline">Less Management.<br><em style="color:var(--lichen)">More Trust.</em></div>
-    <div class="slide-desc" id="slide-desc">Rewilding Canada aims to bring back wild nature at scale in Canada in ways that benefit both nature and people.</div>
+    <div class="slide-headline" id="slide-headline" style="color:var(--warm-white)">Rewilding Canada</div>
+    <div class="slide-desc" id="slide-desc" style="color:var(--cream); font-size: 19px;">Working with nature to restore wilder landscapes, conserve our lands and waters, and inspire a path to a sustainable future.</div>
     <div class="slide-cta">
       <a href="#" class="slide-cta-btn primary" onclick="showSection('mission',document.querySelectorAll('.nav-tabs a')[0]);return false;">Our Story</a>
       <a href="#" class="slide-cta-btn secondary" onclick="showSection('projects',document.querySelectorAll('.nav-tabs a')[4]);return false;">See the Work</a>

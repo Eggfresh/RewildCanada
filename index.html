@@ -427,13 +427,32 @@
     /* Core spacing */
     .section{padding:2.5rem 5vw}
     nav{padding:0 4vw}
-    /* Hero */
+
+    /* HERO SLIDESHOW FIX */
     .hero-stats{display:none}
     .slide-centre{padding:0 5vw}
-    .slide-headline{font-size:clamp(1.4rem,6vw,2rem)}
-    .slide-desc{font-size: 1rem}
-    .slide-tag{font-size:.55rem}
-    /* Nav tabs — horizontal scroll */
+    .slide-headline{
+        font-size: clamp(1.5rem, 8vw, 2.2rem); /* Slightly bumped min/max for better impact */
+        margin-bottom: 1rem;
+    }
+    .slide-desc{
+        font-size: 0.9rem; /* Reduced from 1rem so it doesn't compete with the title */
+        line-height: 1.5;
+        padding: 0.8rem 1.2rem;
+        max-width: 90%;
+    }
+    .slide-tag{font-size: 0.6rem; letter-spacing: 0.2em;}
+
+    /* MISSION HERO FIX (The other subtext you mentioned) */
+    .mission-hero-h2 {
+        font-size: clamp(1.6rem, 7vw, 2.5rem);
+    }
+    .mission-hero-sub {
+        font-size: 0.9rem; /* Scales the subtext down to maintain hierarchy */
+        line-height: 1.6;
+    }
+
+    /* ... keep the rest of your existing mobile styles below ... */
     .nav-tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
     .nav-tabs::-webkit-scrollbar{display:none}
     .nav-tabs li a{padding:.75rem .85rem;font-size:.6rem;white-space:nowrap}

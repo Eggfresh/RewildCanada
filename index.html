@@ -60,7 +60,7 @@
   .hero.hidden{display:none}
   .slide{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease;background-size:cover;background-position:center;background-repeat:no-repeat}
   .slide.active{opacity:1}
-  .slide-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.38) 0%,rgba(0,0,0,.1) 40%,rgba(0,0,0,.72) 100%)}
+  .slide-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.3) 0%,rgba(0,0,0,.35) 50%,rgba(0,0,0,.6) 100%)}
   /* hero top bar - logo + nav links overlaid on image */
   .hero-topbar{position:absolute;top:0;left:0;right:0;z-index:20;padding:1.6rem 4vw;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(to bottom,rgba(20,45,20,.7) 0%,transparent 100%)}
   .hero-logo{display:block}
@@ -71,13 +71,13 @@
   /* centred main text */
   .slide-centre{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:10;padding:80px 6vw 0;text-align:center;flex-direction:column}
   .slide-tag{font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--lichen);margin-bottom:1.1rem}
-  .slide-headline{font-family:'Playfair Display',serif;font-size:clamp(2.6rem,6vw,5.8rem);font-weight:900;color:#fff;line-height:.95;letter-spacing:-.025em;margin-bottom:1.4rem;text-shadow:0 3px 30px rgba(0,0,0,.5)}
+  .slide-headline{text-shadow:0 2px 40px rgba(0,0,0,.7), 0 1px 8px rgba(0,0,0,.5);}
   .slide-desc{font-size:1.05rem;color:#fff;font-weight:400;line-height:1.75;max-width:600px;text-shadow:0 1px 12px rgba(0,0,0,.7)}
   .slide-cta{margin-top:2rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
   .slide-cta-btn{font-family:'DM Mono',monospace;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;padding:.85rem 2rem;text-decoration:none;cursor:pointer;transition:all .25s;border:none;display:inline-block}
   .slide-cta-btn.primary{background:var(--moss);color:#fff}
   .slide-cta-btn.primary:hover{background:var(--lichen);color:var(--charcoal)}
-  .slide-cta-btn.secondary{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5)}
+  .slide-cta-btn.secondary{background:rgba(255,255,255,.15);color:#fff;border:1.5px solid rgba(255,255,255,.7);backdrop-filter:blur(4px);}
   .slide-cta-btn.secondary:hover{border-color:#fff;background:rgba(255,255,255,.12)}
   /* bottom controls */
   .slide-prev:hover,.slide-next:hover{background:rgba(255,255,255,.28)}
